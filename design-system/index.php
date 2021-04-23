@@ -8,12 +8,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>🧰 Simple Design System</title>
-	<link rel="stylesheet" href="https://glenn-sorrentino.github.io/design-system/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 
-	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="https://glenn-sorrentino.github.io/design-system/builder/js/builder.js"></script>
-	<script src="https://glenn-sorrentino.github.io/design-system/components/chat/js/chat.js"></script>
-	<script src="https://glenn-sorrentino.github.io/design-system/js/main.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="builder/js/builder.js"></script>
+	<script src="components/chat/js/chat.js"></script>
+	<script src="components/footer/js/copyright.js"></script>
 </head>
 
 <body id="builder">

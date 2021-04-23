@@ -6,7 +6,7 @@ This design system provides a research-based framework for quickly building dura
 
 Use it as a starter kit that you can build on top of, or use it as a complete, living solution.
 
-<a href="https://simpledesignsystem.io" target="_blank">Explore the Simple Design System</a>
+<a href="https://simpledesignsystem.io" rel="nooopener noreferrer" target="_blank">Explore the Simple Design System</a>
 
 ![Simple Design System Builder](https://raw.githubusercontent.com/glenn-sorrentino/design-system/main/assets/examples/builder.gif)
 
@@ -14,8 +14,8 @@ Use it as a starter kit that you can build on top of, or use it as a complete, l
 
 Easy setup can have you building a website in under a minute!
 
-1. ✏️  Paste the contents of the included <a href="https://raw.githubusercontent.com/glenn-sorrentino/design-system/main/components/page-template/html/page-template.html" target="_blank">page template</a> into your code editor.
-2. 🛠  Add whatever <a href="https://github.com/glenn-sorrentino/design-system/blob/main/components" target="_blank">components</a> meet your needs in the sections within the template.
+1. ✏️  Paste the contents of the included <a href="https://raw.githubusercontent.com/glenn-sorrentino/design-system/main/components/page-template/html/page-template.html" rel="nooopener noreferrer" target="_blank">page template</a> into your code editor.
+2. 🛠  Add whatever <a href="https://github.com/glenn-sorrentino/design-system/blob/main/components" rel="nooopener noreferrer" target="_blank">components</a> meet your needs in the sections within the template.
 3. 💾  Save the file and name it index.html.
 4. 😍  Open it in your browser!
 
@@ -23,4 +23,4 @@ Easy setup can have you building a website in under a minute!
 
 ## Resources
 
-<a href="https://www.figma.com/file/NAqQuqB1mt4Oix3Sdyhr4L/Simple-Design-System-Kit?node-id=5%3A2362" target="_blank">Figma Design Kit</a>
+<a href="https://www.figma.com/file/NAqQuqB1mt4Oix3Sdyhr4L/Simple-Design-System-Kit?node-id=5%3A2362" rel="nooopener noreferrer" target="_blank">Figma Design Kit</a>
