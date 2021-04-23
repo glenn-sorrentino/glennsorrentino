@@ -65,6 +65,10 @@ section {
   margin-bottom: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 p + ul {
   margin-top: var(--spacing-medium);
 }
