@@ -12,7 +12,7 @@
 
 		<!-- ARTICLE - ARTICLE -->
 
-		<?php include "components/article/html/article.html" ?>
+		<?php include "components/article/html/manifesto.html" ?>
 
 		<!-- ARTICLE - PAGINATION -->
 

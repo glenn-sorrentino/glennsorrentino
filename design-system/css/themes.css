@@ -18,10 +18,6 @@
     color: var(--theme-glow);
   }
 
-  .glow .btn:hover {
-    color: var(--theme-glow);
-  }
-
 }
 
 @media (prefers-color-scheme: dark) {

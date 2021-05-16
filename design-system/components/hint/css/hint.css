@@ -13,7 +13,7 @@ p.hint {
   transform: translate(-50%, -50%);
   left: 50%;
   font-size: var(--font-size-xsmall) !important;
-  font-family: var(--font-sans-bold);
+  font-weight: bold;
   opacity: .5;
   animation: floating 3s ease infinite;
   max-width: max-content !important;

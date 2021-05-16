@@ -39,7 +39,7 @@
 .parent {
   font-size: var(--font-size-small);
   text-transform: uppercase;
-  font-family: var(--font-sans-bold);
+  font-weight: bold;
   opacity: .75;
 }
 

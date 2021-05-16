@@ -1,11 +1,7 @@
 :root {
   /* TYPOGRAPHY */
-  --font-default: Helvetica, Arial, sans-serif;
-  --font-sans: "Sans Regular";
-  --font-sans-bold: "Sans Bold";
-  --font-serif: "Serif Regular";
-  --font-serif-italic: "Serif Italic";
-  --font-serif-bold: "Serif Bold";
+  --font-sans: Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, Times, serif;
 
   --font-size-logo: 1.25rem;
   --font-size-body: 1rem;

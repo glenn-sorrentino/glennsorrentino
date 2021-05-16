@@ -142,7 +142,7 @@ tr {
 }
 
 th {
-  font-family: var(--font-sans-bold);
+  font-weight: bold;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -211,7 +211,7 @@ th, td {
   }
 
   td:first-of-type {
-    font-family: var(--font-sans-bold);
+    font-weight: bold;
     font-size: calc(var(--font-size-body)*.9)!important;
     opacity: 1;
   }

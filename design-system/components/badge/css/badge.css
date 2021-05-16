@@ -25,8 +25,8 @@ p.badge {
   font-size: var(--font-size-xxsmall) !important;
   display: inline-block;
   margin: 0 !important;
-  font-family: var(--font-sans-bold);
-  padding: var(--spacing-xxsmall) var(--spacing-small);
+  font-weight: bold;
+  padding: calc(var(--spacing-xxsmall) + 1px) var(--spacing-small) var(--spacing-xxsmall) var(--spacing-small);
   width: auto !important;
 }
 

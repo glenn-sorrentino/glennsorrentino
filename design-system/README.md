@@ -12,9 +12,7 @@ Use it as a starter kit that you can build on top of, or use it as a complete, l
 
 ## Use the design system
 
-Easy setup can have you building a website in under a minute!
-
-1. ✏️  Paste the contents of the included <a href="https://raw.githubusercontent.com/glenn-sorrentino/design-system/main/components/page-template/html/page-template.html" rel="noopener noreferrer nofollow" target="_blank">page template</a> into your code editor.
+1. ✏️  Paste the contents of the included <a href="https://raw.githubusercontent.com/glenn-sorrentino/design-system/main/examples/page-template/html/page-template.html" rel="noopener noreferrer nofollow" target="_blank">page template</a> into your code editor.
 2. 🛠  Add whatever <a href="https://github.com/glenn-sorrentino/design-system/blob/main/components" rel="noopener noreferrer nofollow" target="_blank">components</a> meet your needs in the sections within the template.
 3. 💾  Save the file and name it index.html.
 4. 😍  Open it in your browser!

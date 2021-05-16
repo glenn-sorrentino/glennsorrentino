@@ -134,7 +134,7 @@
 
 .cardMeta p:first-of-type {
   margin-bottom: calc(var(--spacing-xsmall) / 2);
-  font-family: var(--font-sans-bold);
+  font-weight: bold;
 }
 
 .simpleUserList .card:first-of-type {
@@ -188,7 +188,7 @@
 
 .chatHeader p {
   font-size: var(--font-size-small);
-  font-family: var(--font-sans-bold);
+  font-weight: bold;
   margin: 0 auto;
 }
 

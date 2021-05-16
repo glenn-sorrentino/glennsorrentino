@@ -16,9 +16,6 @@
 /* INTRO  */
 
 @import url("../components/intro/css/intro.css");
-@import url("../components/intro/css/secondary-intro.css");
-@import url("../components/intro/css/article-intro.css");
-@import url("../components/intro/css/book-cover-intro.css");
 @import url("../components/hint/css/hint.css");
 
 /* COMPONENTS  */

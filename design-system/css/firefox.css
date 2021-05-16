@@ -1,3 +1,6 @@
+/* Firefox and Tor Browser Optimizations */
+/* For Tor Browser, use .png images instead of .svg */
+
 @media (prefers-color-scheme: light) {
   @-moz-document url-prefix() {
     header, footer, nav.staged {

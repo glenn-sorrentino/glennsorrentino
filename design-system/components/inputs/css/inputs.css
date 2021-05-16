@@ -45,6 +45,13 @@
   width: 100%;
 }
 
+legend {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin:0 0 var(--spacing-small) 0;
+  font-size: var(--font-size-small);
+}
+
 label + input[type="text"]{
   display: block;
   margin-top: var(--spacing-xsmall);
