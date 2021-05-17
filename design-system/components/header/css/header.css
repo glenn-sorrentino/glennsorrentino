@@ -218,7 +218,7 @@ nav.staged li {
 }
 
 .staged .navButton {
-  top: var(--spacing-base);
+  top: var(--spacing-medium);
   right: var(--spacing-base);
 }
 
