@@ -277,12 +277,21 @@ aside .navButton {
     text-align: center;
   }
 
-  /* .logoMark {
+  .logoMark {
     width: 2rem;
     height: 2rem;
-  } */
+  }
 
   header h1 {
     font-size: calc(var(--font-size-logo)*.9);
+  }
+
+  /* header .wrapper {
+    padding-top: var(--spacing-base);
+    padding-bottom: var(--spacing-base);
+  } */
+
+  .staged .navButton {
+    top: var(--spacing-base);
   }
 }
