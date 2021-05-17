@@ -218,7 +218,8 @@ nav.staged li {
 }
 
 .staged .navButton {
-  right: var(--spacing-medium);
+  top: var(--spacing-base);
+  right: var(--spacing-base);
 }
 
 aside .navButton {
