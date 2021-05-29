@@ -98,6 +98,7 @@ header h1 a:hover {
   height: 2.5rem;
   /* background-image: url('#'); */
   background-size: contain;
+  background-repeat: no-repeat;
   margin-right: var(--spacing-xsmall);
 }
 
@@ -272,6 +273,12 @@ aside .navButton {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  header h1 {
+    font-size: calc(var(--font-size-logo)*.9);
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .centeredTitle {
     text-align: center;
@@ -282,16 +289,12 @@ aside .navButton {
     height: 2rem;
   }
 
-  header h1 {
-    font-size: calc(var(--font-size-logo)*.9);
-  }
-
   /* header .wrapper {
     padding-top: var(--spacing-base);
     padding-bottom: var(--spacing-base);
   } */
 
   .staged .navButton {
-    top: var(--spacing-base);
+    top: calc(var(--spacing-base) * 1.25);
   }
 }

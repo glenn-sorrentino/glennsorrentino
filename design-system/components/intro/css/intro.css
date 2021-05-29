@@ -98,6 +98,15 @@
   margin-bottom: 0;
 }
 
+.intro .icon {
+  width: 6rem;
+  height: 6rem;
+  background-size: contain;
+  margin-bottom: var(--spacing-medium);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* SECONDARY INTRO */
 
 .secondaryIntro p:last-of-type{

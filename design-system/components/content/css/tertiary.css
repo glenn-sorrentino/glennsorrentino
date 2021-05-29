@@ -37,6 +37,30 @@
   margin-bottom: var(--spacing-xsmall);
 }
 
+.contentRow .icon.large {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: var(--spacing-base);
+}
+
+.contentRow .icon.full {
+  background-size: contain;
+  width: 100%;
+  height: calc(var(--spacing-xlarge) * 1.5);
+  margin-bottom: var(--spacing-medium);
+}
+
+h3 + .icon + a {
+  margin-top: var(--spacing-medium);
+  display: inherit;
+}
+
+.contentRow .description .btn {
+  display: block;
+  width: max-content;
+  margin: 0 auto var(--spacing-base) auto;
+}
+
 .contentRow .emoji {
   font-size: var(--font-size-emoji-sm) !important;
   margin-bottom: var(--spacing-xsmall) !important;

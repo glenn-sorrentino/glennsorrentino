@@ -10,7 +10,6 @@
 
   .btn:hover {
     background-color: rgba(0,0,0,.05);
-    color: rgba(0,0,0,0.9);
   }
 
   .primaryBtn {
@@ -34,10 +33,11 @@
 
   .btn {
     border: var(--border-dm);
+    background-color: var(--color-dm-shade);
   }
 
   .btn:hover {
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.2);
   }
 
   .primaryBtn {
@@ -69,7 +69,7 @@
 
 .firstAction {
   font-size: var(--font-size-body);
-  padding: var(--spacing-base) var(--spacing-large);
+  padding: var(--spacing-base) var(--spacing-medium);
   box-shadow: var(--shadow-lm);
 }
 

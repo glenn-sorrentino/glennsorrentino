@@ -26,13 +26,6 @@
   }
 }
 
-.avatar {
-  width: calc(var(--spacing-xlarge) * 3) !important;
-  height: calc(var(--spacing-xlarge) * 3) !important;
-  margin-bottom: var(--spacing-base) !important;
-  border-radius: 50vh !important;
-}
-
 .close, .menu {
   width: 40px;
   height: 40px;
