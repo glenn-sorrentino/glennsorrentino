@@ -34,6 +34,7 @@
   .btn {
     border: var(--border-dm);
     background-color: var(--color-dm-shade);
+    line-height: initial;
   }
 
   .btn:hover {

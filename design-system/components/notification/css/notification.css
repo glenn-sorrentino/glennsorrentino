@@ -5,6 +5,20 @@
     }
   }
 
+  @media (prefers-color-scheme: light) {
+    .alert {
+      background-color: var(--color-lm-shade);
+      border: var(--border-lm);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .alert {
+      background-color: var(--color-dm-shade);
+      border: var(--border-dm-alt);
+    }
+  }
+
 .toast {
   display: none;
 }
@@ -28,6 +42,11 @@ p.toast {
 
 .toast a {
   color: var(--font-color-dark);
+}
+
+.alert {
+  padding: var(--spacing-base);
+  border-radius: var(--radius-base);
 }
 
 /* SIZED FOR LONG TOAST MESSAGES */

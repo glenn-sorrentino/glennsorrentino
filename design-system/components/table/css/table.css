@@ -32,6 +32,10 @@
   .emptyBg {
     background-image: url('../assets/empty-bg-lm.svg');
   }
+
+  table {
+    border: var(--border-lm);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,6 +73,14 @@
   .emptyBg {
     background-image: url('../assets/empty-bg-dm.svg');
   }
+
+  table {
+    border: var(--border-dm-alt);
+  }
+}
+
+tr:last-of-type {
+  border-bottom: none;
 }
 
 .window {

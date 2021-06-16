@@ -77,7 +77,7 @@ h3 + .icon + a {
 .contentRowContent .contentItem {
   padding: 0 var(--spacing-medium);
   text-align: center;
-  width: min-content;
+  width: 50vw;
 }
 
 .contentRowContent .contentItem .description {

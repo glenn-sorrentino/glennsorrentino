@@ -95,8 +95,18 @@
   margin-bottom: var(--spacing-base);
 }
 
+.description li {
+  align-items: center;
+  margin-bottom: var(--spacing-base);
+  margin-left: var(--spacing-base);
+}
+
+.description li:last-of-type {
+  margin-bottom: 0;
+}
+
 .noImage .description {
-  width: 66%;
+  width: 66vw;
 }
 
 .content .icon {

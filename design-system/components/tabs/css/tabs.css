@@ -24,7 +24,7 @@
 
 @media (prefers-color-scheme: dark) {
   .tabs {
-    border-bottom: var(--border-dm);
+    border-bottom: var(--border-dm-alt);
   }
 
   .tabs a:hover {

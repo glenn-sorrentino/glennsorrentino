@@ -31,6 +31,7 @@
 
   --theme-glow: #8840F5;
   --theme-glow-light: #c39ffa;
+  --border-glow: 1px solid var(--theme-glow);
 
 /* COLORS */
 
@@ -77,6 +78,7 @@
 
   --border-lm: 1px solid rgba(0,0,0,.08);
   --border-dm: 1px solid rgba(255,255,255,.3);
+  --border-dm-alt: 1px solid rgba(255,255,255,.15);
   --border-input-focus-lm: 1px solid #3D76F5;
   --border-input-focus-dm: 1px solid rgba(255,255,255,0.5);
 
