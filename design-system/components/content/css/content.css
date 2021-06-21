@@ -66,6 +66,10 @@
   margin: 0 auto;
 }
 
+.featureImage.mobileImage.smMobileImage img {
+  width: 50% !important;
+}
+
 .contentItem .description:last-of-type {
   margin-bottom: 0;
 }
@@ -106,7 +110,7 @@
 }
 
 .noImage .description {
-  width: 66vw; 
+  width: 66vw;
 }
 
 .content .icon {
@@ -164,9 +168,16 @@
   }
 
 }
+@media only screen and (max-width: 640px) {
+
+}
 
 @media only screen and (max-width: 375px) {
   .meta {
     font-size: var(--font-size-small) !important;
+  }
+
+  .featureImage.mobileImage.smMobileImage img {
+    width: 80% !important;
   }
 }
