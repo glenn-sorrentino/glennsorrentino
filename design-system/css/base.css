@@ -22,8 +22,7 @@
   }
 
   code {
-    color: #e83e8c;
-    background-color: var(--badge-dm);
+    color: #EE72AC;
     border: var(--border-dm);
   }
 
@@ -99,6 +98,10 @@ li {
   margin-bottom: var(--spacing-small);
   max-width: 640px;
   margin-left: var(--spacing-base);
+}
+
+ol > ul {
+  margin-left: var(--spacing-medium);
 }
 
 @media only screen and (max-width: 960px) {

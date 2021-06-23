@@ -27,7 +27,7 @@
 
   .code {
     color: #e83e8c;
-    background-color: var(--badge-dm);
+    background-color: var(--color-dark);
     border: var(--border-dm);
   }
 }
@@ -41,6 +41,26 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+.emoji + h1 {
+  margin-top: 0;
+}
+
+.emoji + h2 {
+  margin-top: 0;
+}
+
+.emoji + h3 {
+  margin-top: 0;
+}
+
+.emoji + h4 {
+  margin-top: 0;
+}
+
+.emoji + h5 {
+  margin-top: 0;
 }
 
 h1 {
@@ -59,7 +79,7 @@ h2 {
 }
 
 .description h2 {
-  margin-top: 0;
+  margin-top: 0 !important;
   margin-bottom: var(--spacing-base);
 }
 
@@ -67,29 +87,40 @@ h3 {
   font-size: var(--font-size-3)!important;
   line-height: var(--line-height-3)!important;
   margin-bottom: var(--spacing-base);
-  margin-top: var(--spacing-xxlarge);
+  margin-top: var(--spacing-xxlarge) !important;
+  max-width: 50ch;
 }
 
 .description h3 {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .description h2 > h3 {
   margin-top: var(--spacing-xxlarge);
 }
 
+.centeredContent h3 {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+.centeredContent .description h3 {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
 h3 a {
   font-size: var(--font-size-3)!important;
   line-height: var(--line-height-3)!important;
   margin-bottom: var(--spacing-base);
-  margin-top: var(--spacing-xsmall);
+  margin-top: var(--spacing-xsmall) !important;
 }
 
 h4 {
   font-size: var(--font-size-4)!important;
   line-height: var(--line-height-4)!important;
   margin-bottom: var(--spacing-base);
-  margin-top: var(--spacing-xxlarge);
+  margin-top: var(--spacing-xxlarge) !important;
 }
 
 .description h4 {
@@ -123,7 +154,7 @@ p.caption {
 
 .highlight {
   border-radius: var(--radius-base);
-  padding: var(--spacing-xxsmall);
+  padding: var(--spacing-xxsmall) var(--spacing-xxsmall) var(--spacing-xsmall) var(--spacing-xxsmall);
 }
 
 .code {

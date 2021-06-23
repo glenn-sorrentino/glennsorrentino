@@ -6,6 +6,7 @@
 
   table {
     color:var(--font-color-dark);
+    border: var(--border-lm);
   }
 
   th, td, tr {
@@ -33,7 +34,7 @@
     background-image: url('../assets/empty-bg-lm.svg');
   }
 
-  table {
+  p + table {
     border: var(--border-lm);
   }
 }
@@ -77,6 +78,14 @@
   table {
     border: var(--border-dm-alt);
   }
+}
+
+p + table {
+  margin-top: var(--spacing-large);
+}
+
+table + p {
+  margin-top: var(--spacing-base);
 }
 
 tr:last-of-type {

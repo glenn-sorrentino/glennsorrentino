@@ -94,6 +94,10 @@
   margin-bottom: 0;
 }
 
+.intro .highlight {
+  padding: var(--spacing-xsmall) 0 0 var(--spacing-xxsmall);
+}
+
 .withNav {
   margin-bottom: 0;
 }
