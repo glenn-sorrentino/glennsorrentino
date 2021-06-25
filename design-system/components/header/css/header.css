@@ -309,7 +309,7 @@ aside .navButton {
   }
 
   nav .btn {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 
