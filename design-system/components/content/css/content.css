@@ -111,6 +111,10 @@
   margin: 0 auto;
 }
 
+.featureImage.smMobileImage img {
+  width: 60% !important;
+}
+
 .contentItem .description:last-of-type {
   margin-bottom: 0;
 }
