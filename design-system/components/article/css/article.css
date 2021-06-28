@@ -65,7 +65,7 @@ article h4 {
   }
 
   article .featureImage {
-    margin: 0 0 var(--spacing-medium) 0;
+    margin: 0 0 var(--spacing-xxlarge) 0;
     width: 100% !important;
   }
 
