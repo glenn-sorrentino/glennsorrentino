@@ -1,0 +1,52 @@
+@media only screen and (max-width: 870px) {
+
+  nav a.active {
+    border-bottom: none !important;
+  }
+
+  header nav {
+    position: initial;
+  }
+
+  header h1 {
+    float: none;
+    margin-top: 0;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  nav.primaryNav ul {
+    display: inherit;
+  }
+
+  nav a {
+    padding: 0;
+  }
+
+  header nav.staged ul {
+    display: inherit;
+  }
+
+  .navButton, .close, .menu {
+    display: inherit !important;
+  }
+
+  .withUtil {
+    right: calc(var(--spacing-xxlarge) * 1.43);
+  }
+
+  .utilityIcon {
+    padding-left: var(--spacing-medium);
+    margin-left: var(--spacing-base);
+  }
+
+  header.singleNav nav ul {
+    display: inherit !important;
+  }
+
+  nav .btn {
+    margin-left: 0 !important;
+  }
+}
