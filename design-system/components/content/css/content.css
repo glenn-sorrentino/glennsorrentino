@@ -4,11 +4,11 @@
   }
 
   .meta {
-    color: var(--font-label-lm);
+    color: var(--font-color-dark);
   }
 
   .meta a {
-    color: var(--font-label-lm);
+    color: var(--font-color-dark);
   }
 
   .callout {
@@ -26,11 +26,11 @@
   }
 
   .meta {
-    color: var(--font-label-dm);
+    color: var(--font-color-light);
   }
 
   .meta a {
-    color: var(--font-label-dm);
+    color: var(--font-color-light);
   }
 
   .callout {
@@ -89,10 +89,15 @@
 }
 
 .callout {
-  padding: var(--spacing-xxlarge) calc(var(--spacing-xxlarge) * 2);
+  padding: calc(var(--spacing-xxlarge) * 2) var(--spacing-medium);
   border-radius: var(--radius-soft);
-  max-width: max-content;
-  width: 90%;
+  /* max-width: max-content; */
+  width: 100%;
+}
+
+.emojiCallout {
+  padding: calc(var(--spacing-xxlarge) * 2) 0 calc(var(--spacing-xxlarge) * 2.25) 0;
+
 }
 
 .featureImage {
@@ -109,10 +114,6 @@
 .featureImage.mobileImage img {
   width: 80% !important;
   margin: 0 auto;
-}
-
-.featureImage.smMobileImage img {
-  width: 60% !important;
 }
 
 .contentItem .description:last-of-type {
@@ -189,7 +190,7 @@
 }
 
 @media only screen and (max-width: 960px) {
-  .contentItem p {
+  .description p {
     width: 100%;
   }
 }

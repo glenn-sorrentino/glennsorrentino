@@ -8,6 +8,7 @@
 
 footer {
   padding-bottom: var(--spacing-base) !important;
+  margin-top: calc(var(--spacing-xxlarge) * 2);
 }
 
 footer p {

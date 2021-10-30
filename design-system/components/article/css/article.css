@@ -2,6 +2,7 @@ article h2 {
   font-family: var(--font-serif)!important;
   font-weight: bold !important;
   margin-bottom: var(--spacing-large) !important;
+  margin-top: calc(var(--spacing-xxlarge)*1.5) !important;
 }
 
 article h3 {
@@ -18,6 +19,18 @@ article h4 {
 
 .authorName {
   font-weight: bold;
+}
+
+article img {
+  max-width: 100%;
+  width: 1024px;
+  height: auto;
+  margin-bottom: var(--spacing-medium);
+  transition: 300ms;
+}
+
+article img.small {
+  width: 640px;
 }
 
 article {

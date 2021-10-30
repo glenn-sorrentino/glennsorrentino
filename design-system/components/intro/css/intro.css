@@ -72,8 +72,23 @@
   border-bottom: none !important;
 }
 
+.intro .projectLogo {
+  height: 3rem;
+  margin-bottom: var(--spacing-base);
+  margin-top: -1rem;
+}
+
 .intro h1 {
   max-width: 80%;
+}
+
+.intro .meta {
+  word-break: break-word;
+  margin-top: var(--spacing-xsmall);
+}
+
+.intro p:first-of-type {
+  margin-bottom: var(--spacing-medium);
 }
 
 .intro p {
@@ -363,7 +378,8 @@ p.typeset {
 
 @media only screen and (max-width: 375px) {
   .secondaryIntro {
-    padding-top: calc(var(--spacing-xxlarge) * 1.5);
-    padding-bottom: calc(var(--spacing-xxlarge) * 1.5);
+    padding-top: calc(var(--spacing-xxlarge) * 1.5) !important;
+    padding-bottom: calc(var(--spacing-xxlarge) * 1.5) !important;
+    margin-top: 80px;
   }
 }
