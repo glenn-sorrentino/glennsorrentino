@@ -69,7 +69,7 @@
 
 	<section class="content articleSection wrapper">
 		<article>
-			<p>Creating an onion website is a private, free, and can be deployed easier than a traditional domain. You'll save time and money by not going through the process of purchasing a domain and add-ons (like domain privacy), properly configuring your web hosting, and  <a href="https://www.forbes.com/sites/daveywinder/2020/05/05/godaddy-confirms-data-breach-what-19-million-customers-need-to-know/?sh=18daecae1daa" rel="noopener noreferrer nofollow" target="_blank">providing personal and financial data to yet another vulnerable company</a>.</p>
+			<p>Creating an onion website is private, free, and can be deployed easier than a traditional domain. You'll save time and money by not going through the process of purchasing a domain and add-ons (like domain privacy), properly configuring your web hosting, and  <a href="https://www.forbes.com/sites/daveywinder/2020/05/05/godaddy-confirms-data-breach-what-19-million-customers-need-to-know/?sh=18daecae1daa" rel="noopener noreferrer nofollow" target="_blank">providing personal and financial data to yet another vulnerable company</a>.</p>
 			<h3>Step 1: Raspberry Pi Setup</h3>
 			<p>First, you should have an operational Raspberry Pi running Debian. I used Raspbian via the <a href="https://www.raspberrypi.com/software/" rel="noopener noreferrer nofollow" target="_blank">Raspberry Pi Imager</a>.</p>
 			<img class="small" src="../assets/onion-website/step1.png">
@@ -88,13 +88,13 @@
 			<h3>Step 5: Restart Tor</h3>
 			<p class="code">sudo systemctl restart tor</p>
 			<h3>Step 6: Find Your Onion Address</h3>
-			<p>Get your Onion address from your hostname file here:</p>
+			<!-- <p>Get your Onion address from your hostname file here:</p> -->
 			<p class="code">sudo nano /var/lib/tor/hidden_service/hostname</p>
 			<img class="small" src="../assets/onion-website/step6.png">
 			<h3>Step 7: Port Forwarding</h3>
 			<p>Enable port forwarding on your router for the Pi's local IP address and the port specified in your Torrc file.</p>
 			<h3>Step 8: Visit your website!</h3>
-			<p>Go to your onion address.</p>
+			<p>Enter your onion address in Tor Browser.</p>
 			<img src="../assets/onion-website/step8.png">
 			<h3>Next Steps</h3>
 			<p>To learn more about best practices for hosting onion services, check out this <a href="https://riseup.net/en/security/network-security/tor/onionservices-best-practices" rel="noopener noreferrer nofollow" target="_blank">guide from RiseUp</a>. Also, be sure to check out this <a href="https://community.torproject.org/onion-services/setup/" rel="noopener noreferrer nofollow" target="_blank">guide for setting up an onion service published by The Tor Project</a>.</p>
