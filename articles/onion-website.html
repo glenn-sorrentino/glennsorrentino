@@ -7,7 +7,7 @@
 	<meta name="author" content="Glenn Sorrentino">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Host your own onion website - Product Design Portfolio of Glenn Sorrentino</title>
+	<title>🧅 Host your own onion website - Product Design Portfolio of Glenn Sorrentino</title>
 
 	<link rel="stylesheet" href="../design-system/css/style.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -62,16 +62,16 @@
 	<section class="intro secondaryIntro">
 		<div class="wrapper">
 			<h1>Host your own onion website</h1>
-			<p>Get a private website online with a Raspberry Pi, Nginx, and Tor.</p>
-			<p class="meta">November 20, 2021</p>
+			<p>Get a private website online using a Raspberry Pi, Nginx, and Tor.</p>
+			<p class="meta">November 21, 2021</p>
 		</div>
 	</section>
 
 	<section class="content articleSection wrapper">
 		<article>
-			<p>Creating an onion website is free and can be done faster than using a traditional domain. You'll save time by not needing to go through the process of purchasing a domain and add-ons (like domain privacy, lol), and properly configuring your web hosting.</p>
+			<p>Creating an onion website is a private, free, and can be deployed easier than a traditional domain. You'll save time and money by not going through the process of purchasing a domain and add-ons (like domain privacy), properly configuring your web hosting, and  <a href="https://www.forbes.com/sites/daveywinder/2020/05/05/godaddy-confirms-data-breach-what-19-million-customers-need-to-know/?sh=18daecae1daa" rel="noopener noreferrer nofollow" target="_blank">providing personal and financial data to yet another vulnerable company</a>.</p>
 			<h3>Step 1: Raspberry Pi Setup</h3>
-			<p>You should have a operational Raspberry Pi running Debian. I specifically used Raspbian via the <a href="https://www.raspberrypi.com/software/" rel="noopener noreferrer nofollow" target="_blank">Raspberry Pi Imager</a>.</p>
+			<p>First, you should have an operational Raspberry Pi running Debian. I used Raspbian via the <a href="https://www.raspberrypi.com/software/" rel="noopener noreferrer nofollow" target="_blank">Raspberry Pi Imager</a>.</p>
 			<img class="small" src="../assets/onion-website/step1.png">
 			<h3>Step 2: Nginx</h3>
 			<p>Install Nginx <a href="https://pimylifeup.com/raspberry-pi-nginx/" rel="noopener noreferrer nofollow" target="_blank">using this guide</a>.</p>
@@ -85,18 +85,19 @@
 			<p>Create an onion service by uncommenting the lines:</p>
 			<p class="code">HiddenServiceDir /var/lib/tor/hidden_service/<br>HiddenServicePort 80 127.0.0.1:80</p>
 			<img class="small" src="../assets/onion-website/step4.png">
-			<h3>Step 5: Reboot</h3>
-			<p class="code">sudo reboot</p>
+			<h3>Step 5: Restart Tor</h3>
+			<p class="code">sudo systemctl restart tor</p>
 			<h3>Step 6: Find Your Onion Address</h3>
 			<p>Get your Onion address from your hostname file here:</p>
 			<p class="code">sudo nano /var/lib/tor/hidden_service/hostname</p>
 			<img class="small" src="../assets/onion-website/step6.png">
 			<h3>Step 7: Port Forwarding</h3>
-			<p>Enable port forwarding for port 80 on your Pi in your router's settings.</p>
-			<img src="../assets/onion-website/step7.png">
+			<p>Enable port forwarding on your router for the Pi's local IP address and the port specified in your Torrc file.</p>
 			<h3>Step 8: Visit your website!</h3>
 			<p>Go to your onion address.</p>
 			<img src="../assets/onion-website/step8.png">
+			<h3>Next Steps</h3>
+			<p>To learn more about best practices for hosting onion services, check out this <a href="https://riseup.net/en/security/network-security/tor/onionservices-best-practices" rel="noopener noreferrer nofollow" target="_blank">guide from RiseUp</a>. Also, be sure to check out this <a href="https://community.torproject.org/onion-services/setup/" rel="noopener noreferrer nofollow" target="_blank">guide for setting up an onion service published by The Tor Project</a>.</p>
 	</section>
 
 	<!-- FOOTER -->
