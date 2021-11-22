@@ -67,6 +67,14 @@ article h4 {
   margin: 0 0 var(--spacing-base) 0;
 }
 
+article .description h3 {
+  margin-top: var(--spacing-xxlarge) !important;
+}
+
+article .description {
+  width: auto;
+}
+
 @media only screen and (max-width: 1280px) {}
 
 @media only screen and (max-width: 768px) {}
