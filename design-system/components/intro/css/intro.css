@@ -92,8 +92,9 @@
 }
 
 .intro p {
-  font-size: calc(var(--font-size-body) * 1.125);
+  font-size: var(--font-size-body);
   max-width: max-content;
+  margin-top: var(--spacing-xxsmall);
 }
 
 .intro p a {
