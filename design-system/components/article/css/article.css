@@ -75,6 +75,44 @@ article .description {
   width: auto;
 }
 
+article.caseStudy h1 {
+  text-align: center;
+}
+
+article.caseStudy h2 {
+  text-align: center;
+}
+
+article.caseStudy h3 {
+  text-align: center;
+}
+
+article.caseStudy h4 {
+  text-align: center;
+}
+
+article.caseStudy p {
+  margin-bottom: calc(var(--spacing-xxlarge) * 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.caseStudy .description {
+  margin-bottom: calc(var(--spacing-xxlarge) * 2);
+}
+
+article.caseStudy img {
+  margin-bottom: calc(var(--spacing-xxlarge) * 2);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-content: center;
+}
+
+article .description p {
+  margin-bottom: var(--spacing-medium);
+}
+
 @media only screen and (max-width: 1280px) {}
 
 @media only screen and (max-width: 768px) {}
