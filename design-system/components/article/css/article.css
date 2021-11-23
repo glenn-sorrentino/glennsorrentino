@@ -48,7 +48,7 @@ article a.location {
 }
 
 article p {
-  margin-bottom: var(--spacing-medium);
+  margin-bottom: var(--spacing-base);
 }
 
 article h2 {
