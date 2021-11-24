@@ -49,6 +49,7 @@ article a.location {
 
 article p {
   margin-bottom: var(--spacing-base);
+  line-height: var(--line-height-article);
 }
 
 article h2 {
@@ -73,6 +74,7 @@ article .description h3 {
 
 article .description {
   width: auto;
+  padding-right: 0;
 }
 
 article.caseStudy h1 {
