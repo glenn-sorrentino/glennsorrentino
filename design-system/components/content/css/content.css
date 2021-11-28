@@ -178,6 +178,11 @@
   border-radius: var(--radius-base);
 }
 
+.tertiaryContent .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .emoji {
   font-size: var(--font-size-emoji) !important;
   line-height: inherit!important;

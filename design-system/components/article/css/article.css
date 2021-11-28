@@ -25,7 +25,7 @@ article img {
   max-width: 100%;
   width: 1024px;
   height: auto;
-  margin-bottom: var(--spacing-medium);
+  margin: var(--spacing-medium) 0;
   transition: 300ms;
 }
 
@@ -35,6 +35,10 @@ article img.small {
 
 article {
   margin-bottom: var(--spacing-xxlarge);
+}
+
+article p + img {
+  margin-top: var(--spacing-base);
 }
 
 article .featureImage {

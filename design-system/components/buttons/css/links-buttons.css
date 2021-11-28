@@ -62,6 +62,15 @@
   line-height: initial;
 }
 
+.tertiaryContent .btn {
+  padding: var(--spacing-xsmall) var(--spacing-small);
+  border-radius: var(--radius-soft);
+  font-size: var(--font-size-xsmall);
+  font-weight: bold;
+  display: inline-block;
+  line-height: initial;
+}
+
 .btn:hover {
     box-shadow: 0 .125rem .5rem rgba(0,0,0,0.1);
     text-decoration: none;

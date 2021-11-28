@@ -1,3 +1,19 @@
+.tertiaryContent .contentItem {
+  margin-bottom: var(--spacing-large);
+}
+
+.tertiaryContent .meta {
+  margin-bottom: var(--spacing-xsmall);
+}
+
+.tertiaryContent p + p {
+  margin-top: var(--spacing-small);
+}
+
+.tertiaryContent .description p {
+  margin-bottom: var(--spacing-xsmall);
+}
+
 .contentRow h2 {
   text-align: center;
 }

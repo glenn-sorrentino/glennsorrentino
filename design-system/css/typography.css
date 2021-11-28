@@ -66,6 +66,11 @@ h2 {
   letter-spacing: -.025rem;
 }
 
+.tertiaryContent h2 {
+  font-size: calc(var(--font-size-2)*.8)!important;
+  line-height: calc(var(--line-height-3)*.8)!important;
+}
+
 .description h2 {
   margin-top: 0 !important;
   margin-bottom: var(--spacing-base);
@@ -77,6 +82,16 @@ h3 {
   margin-bottom: var(--spacing-base);
   margin-top: var(--spacing-xxlarge) !important;
   max-width: 50ch;
+}
+
+h3 a {
+  margin-top: var(--spacing-xsmall) !important;
+}
+
+.tertiaryContent h3 {
+  font-size: calc(var(--font-size-3)*.8)!important;
+  line-height: calc(var(--line-height-3)*.8)!important;
+  margin-bottom: var(--spacing-xsmall);
 }
 
 .description h3 {
@@ -95,13 +110,6 @@ h3 {
 .centeredContent .description h3 {
   margin-left: auto!important;
   margin-right: auto!important;
-}
-
-h3 a {
-  font-size: var(--font-size-3)!important;
-  line-height: var(--line-height-3)!important;
-  margin-bottom: var(--spacing-base);
-  margin-top: var(--spacing-xsmall) !important;
 }
 
 h4 {
