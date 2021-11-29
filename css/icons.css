@@ -1,11 +1,11 @@
 .projectLogo.slackLogo {
-  background-image: url('../assets/slack/logo.svg');
+  background-image: url('../assets/slack/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .projectLogo.sfdcLogo {
-  background-image: url('../assets/salesforce/logo/logo.svg');
+  background-image: url('../assets/salesforce/logo/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
