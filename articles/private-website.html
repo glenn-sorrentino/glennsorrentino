@@ -68,42 +68,36 @@
 
 	<section class="content wrapper">
 		<article>
-			<p>We’ll use Njalla and Zcash to buy the domain name, and BitLaunch and Etherium to buy a virtual server to get the website online - all without giving up any personal information 🙌.</p>
+			<p>We’ll use Njalla and Zcash to buy the domain name and virtual private server to get the website online - all without giving up any personal information 🙌.</p>
 			<h3>Step 1. Create a Njalla Account</h3>
 			<p>Njalla is a “privacy-aware” domain registrar. Using a traditional domain registrar like GoDaddy to buy a domain like thisismyprivatewebsite.com would <a href="https://www.godaddy.com/agreements/privacy" rel="noopener noreferrer nofollow" target="_blank">require that you provide</a> your “name, address, telephone number, date of birth, email address, billing and payment information, and other data collected that could directly or indirectly identify you.” 😬</p>
 			<p>It doesn’t help that when we give out our personal information <a href="https://www.pcmag.com/news/godaddy-hacked-12m-customers-at-risk-of-phishing-attack" rel="noopener noreferrer nofollow" target="_blank">it always seems to get hacked</a>. When you use Njalla, none of that applies. All you need is cryptocurrency. Go to their site and create an account.</p>
 			<p>Public website: <a href="https://njal.la/" rel="noopener noreferrer nofollow" target="_blank">https://njal.la/</a></p>
 			<p>Onion website: njallalafimoej5i4eg7vlnqjvmb6zhdh27qxcatdn647jtwwwui3nad.onion</p>
 			<img src="../assets/private-website/step1.png">
-			<h3>Step 2: Add Funds</h3>
-			<p>Go to Account > Wallet > Add Funds</p>
-			<p>Njalla allows you to pay using Zcash, a private cryptocurrency. A premium domain costs around $20 USD per year, so we’ll send that much to our Njalla Wallet. Wait for the transaction to complete before navigating away from this page - I waited 5-10 minutes for the payment to be confirmed.</p>
-			<img src="../assets/private-website/step2.png">
-			<h3>Step 3: Buy a Domain</h3>
+			<h3>Step 2: Find a Domain</h3>
 			<p>Click on the “Domains” tab and search for a domain.</p>
+			<img src="../assets/private-website/step2.png">
+			<h3>Step 3: Add a Server</h3>
+			<p>Click on the “Servers” tab and add the package that meets your needs.</p>
 			<img src="../assets/private-website/step3.png">
-			<p>Select and purchase the domain with the funds that you deposited. When you’ve completed registration you’ll see a success message.</p>
-			<img src="../assets/private-website/step3a.png">
-			<h3>Step 4: Create a BitLaunch Account</h3>
-			<p>Now that we have our domain name, we need a host for the website’s content. We’ll use BitLaunch, a service that allows you to use cryptocurrency to pay for a virtual server. Head over to their site to create an account.</p>
-			<p>Public website: <a href="https://bitlaunch.io" rel="noopener noreferrer nofollow" target="_blank">https://bitlaunch.io</a></p>
+			<p>Add an SSH key in the field at the bottom of the form.</p>
 			<img src="../assets/private-website/step4.png">
-			<h3>Step 5: Add Funds</h3>
-			<p>BitLaunch allows you to pay with Bitcoin, Etherium, or Litecoin. Deposit as much as you’d like to get started.</p>
-			<img src="../assets/private-website/step5.png">
-			<h3>Step 6: Create a Server</h3>
-			<p>I chose BitLaunch with a Debian image.</p>
+			<h3>Step 4: Deposit</h3>
+			<p>When you click "Checkout" you'll be taken back to your cart. Add funds to continue.</p>
+			<p>Njalla allows you to pay using Zcash, a private cryptocurrency. A premium domain costs around $20 USD per year, so we’ll send that much to our Njalla Wallet. Wait for the transaction to complete before navigating away from this page - I waited 5-10 minutes for the payment to be confirmed.</p>
 			<img src="../assets/private-website/step6.png">
-			<h3>Step 7: Install NGINX</h3>
-			<p>When you created your server, you also created an SSH login password. Log in to your server and install NGINX.</p>
-			<img class="small" src="../assets/private-website/step7.png">
-			<h3>Step 8: Update Your Domain’s DNS Settings</h3>
-			<p>Back at Njalla on the "Domains" tab click "Manage" next to your domain.</p>
+			<p>Once you've completed the checkout process you'll be taken back to the domains tab and will see a success message.</p>
 			<img src="../assets/private-website/step8.png">
-			<p>On the "DNS Settings" subtab, you’ll see the option to add a new DNS record. In the "Content" field, enter the IP address of your BitLaunch server. Click the "+" button when you’re done.</p>
-			<img src="../assets/private-website/step8a.png">
+			<h3>Step 5: Install NGINX</h3>
+			<p>SSH into your new server and install NGINX <a href="https://pimylifeup.com/raspberry-pi-nginx/" rel="noopener noreferrer nofollow" target="_blank">using this guide</a>.</p>
+			<img class="small" src="../assets/private-website/step10.png">
+			<h3>Step 6: Update Your Domain’s DNS Settings</h3>
+			<p>Click on the "Domains" tab click "Manage" next to your domain. On the "DNS Settings" subtab, update the "Content" field of the Type A DNS record with the IP address of your server. Click the "+" button when you’re done.</p>
+			<img src="../assets/private-website/step11.png">
+			<h3>Step 7: Visit your new website</h3>
 			<p>Enter your domain name into your browser and visit your new website!</p>
-			<img src="../assets/private-website/step9.png">
+			<img src="../assets/private-website/step12.png">
 			<p>🎉 Congratulations, you just launched a public website and kept your “name, address, telephone number, date of birth, email address, billing and payment information, and other data collected that could directly or indirectly identify you” private!</p>
 		</article>
 	</section>
