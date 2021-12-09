@@ -49,7 +49,7 @@ code {
 }
 
 html {
-  scroll-padding-top: calc(var(--spacing-large) + 88px);
+  scroll-padding-top: calc(var(--spacing-xxlarge) + 88px);
 }
 
 * {
