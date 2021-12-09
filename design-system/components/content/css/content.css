@@ -100,6 +100,15 @@
 
 }
 
+img.shadow {
+  box-shadow: 0 40px 40px -20px rgba(0,0,0,0.15) !important;
+}
+
+img.border {
+  border: var(--border-lm);
+  border-radius: var(--radius-soft);
+}
+
 .featureImage {
   width: 50%;
 }
