@@ -15,20 +15,11 @@
     background-color: var(--badge-lm);
     border: var(--border-lm);
   }
-
-  body {
-    background-image: radial-gradient(rgba(0,0,0,0.15) 1px, transparent 0);
-    background-size: 1.5rem 1.5rem;
-    background-position: -1rem -1rem;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--color-dark);
-    background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 0);
-    background-size: 1.5rem 1.5rem;
-    background-position: -1rem -1rem;
   }
 
   ::selection {
