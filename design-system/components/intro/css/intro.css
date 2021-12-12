@@ -252,9 +252,16 @@ p.typeset {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1280px) {
   .intro h1 {
     max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro h1 {
+    max-width: 90%;
   }
 }
 
@@ -281,16 +288,13 @@ p.typeset {
     font-size: calc(var(--font-size-1) * .9);
     line-height: calc(var(--line-height-1) * .9);
   }
+
 }
 
 @media only screen and (max-width: 768px) {
   .headline p {
     font-size: calc(var(--font-size-1) * .75);
     line-height: calc(var(--line-height-1) * .75);
-  }
-
-  .intro h1 {
-    max-width: 100%;
   }
 
   .headline p:last-of-type {
@@ -363,10 +367,6 @@ p.typeset {
 @media only screen and (max-width: 480px) {
   .intro {
     position: relative;
-  }
-
-  .intro h1 {
-    max-width: 100%;
   }
 
   .secondaryIntro h1 {
