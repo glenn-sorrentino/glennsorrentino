@@ -254,7 +254,7 @@ p.typeset {
 
 @media only screen and (max-width: 1024px) {
   .intro h1 {
-    max-width: 100%;
+    max-width: 80%;
   }
 }
 
@@ -287,6 +287,10 @@ p.typeset {
   .headline p {
     font-size: calc(var(--font-size-1) * .75);
     line-height: calc(var(--line-height-1) * .75);
+  }
+
+  .intro h1 {
+    max-width: 100%;
   }
 
   .headline p:last-of-type {

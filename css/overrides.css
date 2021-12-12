@@ -4,31 +4,38 @@
 
 @media only screen and (max-width: 1440px) {
 .intro h1 {
+    font-size: calc(var(--font-size-1) * .9) !important;
+    line-height: calc(var(--line-height-1) * .9) !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+.intro h1 {
     font-size: calc(var(--font-size-1) * .8) !important;
     line-height: calc(var(--line-height-1) * .8) !important;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 .intro h1 {
     font-size: calc(var(--font-size-1) * .7) !important;
     line-height: calc(var(--line-height-1) * .7) !important;
   }
 }
 
-@media only screen and (max-width: 640px) {
-.intro h1 {
-    font-size: calc(var(--font-size-1) * .65) !important;
-    line-height: calc(var(--line-height-1) * .65) !important;
-  }
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 .intro h1 {
     font-size: calc(var(--font-size-1) * .6) !important;
     line-height: calc(var(--line-height-1) * .6) !important;
   }
 }
+
+/* @media only screen and (max-width: 640px) {
+.intro h1 {
+    font-size: calc(var(--font-size-1) * .6) !important;
+    line-height: calc(var(--line-height-1) * .6) !important;
+  }
+} */
 
 @media only screen and (max-width: 870px) {
 
