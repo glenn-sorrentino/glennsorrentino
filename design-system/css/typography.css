@@ -74,7 +74,7 @@ h2 {
 h3 {
   font-size: var(--font-size-3)!important;
   line-height: var(--line-height-3)!important;
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--spacing-small);
   margin-top: var(--spacing-xxlarge) !important;
   max-width: 50ch;
 }
@@ -125,10 +125,6 @@ p {
   max-width: 640px !important;
 }
 
-p + p {
-  margin-top: var(--spacing-base);
-}
-
 p + ul {
   margin-top: var(--spacing-base);
 }
@@ -149,10 +145,6 @@ p.caption {
 
 p .highlight {
   padding: var(--spacing-xxsmall);
-}
-
-p.hint {
-  transition: .3s;
 }
 
 .code {
