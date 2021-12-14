@@ -80,8 +80,8 @@ h3 {
 }
 
 h3 a {
-  margin-top: var(--spacing-xsmall) !important;
-  line-height: var(--line-height-3) !important;
+  /* margin-top: var(--spacing-xsmall) !important; */
+  /* line-height: var(--line-height-3) !important; */
 }
 
 .description h3 {
