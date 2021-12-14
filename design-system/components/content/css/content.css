@@ -141,30 +141,7 @@ img.border {
 }
 
 .minimalContent .contentItem {
-  margin-bottom: var(--spacing-large) !important;
-}
-
-.minimalContent h3 {
-  font-size: calc(var(--font-size-3)*.8) !important;
-  line-height: calc(var(--line-height-3)*.8) !important;
-  margin-bottom: var(--spacing-xsmall);
-}
-
-.minimalContent p {
-  font-size: calc(var(--font-size-body)*.9);
-  line-height: calc(var(--line-height-body)*.9);
-  margin-bottom: var(--spacing-xsmall) !important;
-  margin-top: 0 !important;
-}
-
-.minimalContent p:last-of-type {
-  margin-bottom: 0 !important;
-}
-
-.minimalContent .btn {
-  padding: var(--spacing-xsmall) var(--spacing-small);
-  font-size: var(--font-size-xsmall);
-  margin: var(--spacing-small) 0 var(--spacing-xsmall) 0;
+  margin-bottom: var(--spacing-xxlarge);
 }
 
 .contentItem h2 {
@@ -224,10 +201,6 @@ img.border {
   line-height: inherit!important;
   margin-top: 0!important;
   margin-bottom: var(--spacing-base) !important;
-}
-
-.channels {
-  margin-top: var(--spacing-base);
 }
 
 @media only screen and (max-width: 1024px) {
