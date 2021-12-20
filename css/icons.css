@@ -1,7 +1,11 @@
 .projectLogo.slackLogo {
-  background-image: url('../assets/slack/logo.png');
+  background-image: url('../assets/salesforce/slack/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.icon.slack {
+  background-image: url('../assets/salesforce/slack/logo.png');
 }
 
 .projectLogo.sfdcLogo {
@@ -11,7 +15,13 @@
 }
 
 .icon.avatar {
-  background-image: url('../assets/about/avatar.jpg');
+  background-image: url('../assets/about/avatar-pixel.png');
+
+}
+
+.icon.avatar:hover {
+  background-image: url('../assets/about/avatar.png');
+  transition: 1s;
 }
 
 @media (prefers-color-scheme: light) {
