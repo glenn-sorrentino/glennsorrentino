@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: light) {
   header {
-    background-color: var(--color-glass-lm);
+    background-color: var(--color-light);
   }
 
   nav ul li a:hover {
@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: var(--color-glass-dm);
+    background-color: var(--color-dark);
   }
 
   nav ul li a:hover {
