@@ -118,12 +118,20 @@ nav .badge {
       box-shadow: var(--shadow-lm);
       background-color: var(--color-light);
     }
+
+    nav ul li a:hover {
+      box-shadow: inset 3px 0 var(--color-dark);
+    }
   }
 
   @media (prefers-color-scheme: dark) {
     nav ul {
       box-shadow: var(--shadow-dm);
       background-color: var(--color-dark);
+    }
+
+    nav ul li a:hover {
+      box-shadow: inset 3px 0 var(--color-light);
     }
   }
 
@@ -156,10 +164,6 @@ nav .badge {
     padding-bottom: var(--spacing-base) !important;
     padding-left: var(--spacing-medium) !important;
     padding-right: var(--spacing-medium) !important;
-  }
-
-  nav ul li a:hover {
-    box-shadow: inset 3px 0 black;
   }
 
   nav .btn {
