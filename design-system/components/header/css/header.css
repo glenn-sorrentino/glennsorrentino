@@ -1,107 +1,54 @@
 @media (prefers-color-scheme: light) {
   header {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: var(--color-light);
   }
 
-  nav.staged {
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: var(--shadow-lm);
-  }
-
-  .utilityIcon {
-    border-left: var(--border-lm);
-  }
-
-  .utilitySection {
-    border-top: var(--border-lm);
-  }
-
-  .staged .utilityIcon {
-    border-left: none;
-  }
-
-  nav a.active {
-    border-bottom: 3px solid var(--color-dark);
-  }
-
-  .navbar-toggle {
-    background-image: url("../../../../images/lm-icon-menu.png");
+  nav ul li a:hover {
+    box-shadow: inset 0 -3px var(--color-dark);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: rgba(51, 51, 51, .8);
+    background-color: var(--color-dark);
   }
 
-  .navbar-toggle {
-    background-image: url("../../../../images/dm-icon-menu.png");
-  }
-
-  nav.staged {
-    background-color: rgba(51, 51, 51, 1);
-    box-shadow: var(--shadow-dm);
-  }
-
-  .utilityIcon {
-    border-left: var(--border-dm);
-  }
-
-  .utilitySection {
-    border-top: var(--border-dm);
-  }
-
-  .staged .utilityIcon {
-    border-left: none;
-  }
-
-  nav a.active {
-    border-bottom: 3px solid var(--color-light);
+  nav ul li a:hover {
+    box-shadow: inset 0 -3px var(--color-light);
   }
 }
 
 header {
-  z-index: 3;
   position: fixed;
+  top: 0;
   right: 0;
   left: 0;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
-}
-
-header .btn {
-  margin-bottom: 0;
+  flex: 0 1 auto;
 }
 
 header .wrapper {
-  padding-top: var(--spacing-medium);
-  padding-bottom: var(--spacing-medium);
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  width: 100%;
-  align-items: center;
-}
-
-.appHeader .wrapper {
-  max-width: inherit;
-  padding: var(--spacing-medium) var(--spacing-base) !important;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 header h1 {
-  font-size: var(--font-size-logo);
-  margin-bottom: 0;
-  line-height: initial;
-  flex: 1;
-  width: max-content;
+  width: fit-content;
+  font-size: var(--font-size-logo) !important;
 }
 
-header h1 a {
+header .logo {
+  display: flex;
+  align-items: center;
+  height: var(--size-logo);
+  padding: calc(var(--spacing-medium) * 1.125) 0;
+  line-height: var(--line-height-base);
+  display: flex;
+  width: fit-content;
+  font-weight: bold;
+}
+
+header a {
   text-decoration: none;
 }
 
@@ -109,232 +56,125 @@ header h1 a:hover {
   text-decoration: underline;
 }
 
-.logoMark {
-  width: 2.5rem;
-  height: 2.5rem;
-  /* background-image: url('#'); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: var(--spacing-xsmall);
+.mobileNav {
+  display: none;
 }
-
-.emptyLogo {
-  width: 0 !important;
-  margin-right: 0 !important;
-}
-
-header .emojiTheme {
-  -webkit-text-fill-color: initial;
-  background: initial;
-}
-
-.assistiveText {
-  position: absolute !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  text-transform: none !important;
-  white-space: nowrap !important;
-  font-size: var(--font-size-small);
-}
-
-.assistiveText:focus {
-  top: 0;
-  width: initial!important;
-  height: initial!important;
-  overflow: visible!important;
-  clip:auto!important;
-  }
 
 nav {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+  width: fit-content;
+}
+
+nav.staged {
+  display: none;
+}
+
+.open {
+  display: initial !important;
 }
 
 nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
   margin: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin-left: 0 !important;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li a.wrapper {
+  max-width: initial;
+  width: initial;
+  display: flex;
+  padding: 0 calc(var(--spacing-small) * 1.25);
+}
+
+nav ul li a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  font-size: var(--font-size-small);
 }
 
 nav .btn {
-  margin-left: var(--spacing-small);
-}
-
-nav ul li:first-of-type {
-  margin-left: 0;
-}
-
-nav ul li:last-of-type {
-  margin-bottom: 0;
-}
-
-nav a {
-  font-size: var(--font-size-small);
-  text-decoration: none;
-  padding: 0 var(--spacing-xsmall) calc(var(--spacing-large) + 2px) var(--spacing-xsmall);
-}
-
-nav a.active {
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav.staged {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-  padding: var(--spacing-large) var(--spacing-medium);
-  width: 100%;
-}
-
-.utilitySection {
-  padding-top: var(--spacing-large);
-}
-
-.utilityIcon {
-  font-size: var(--font-size-logo);
-  padding-left: var(--spacing-base);
   margin-left: var(--spacing-base);
-  opacity: .85;
-  padding-bottom: 0;
-  padding-right: 0;
+  height: auto;
 }
 
-.utilitySection .utilityIcon {
-  margin-right: var(--spacing-small);
-  padding-top: var(--spacing-large);
-  padding-left: 0;
-}
-
-.utilityIcon:hover {
-  text-decoration: none;
-  opacity: 1;
-}
-
-.open {
-  display: block !important;
-}
-
-nav.staged li {
-  display: inherit;
-  margin-left: 0;
-  margin-bottom: var(--spacing-large);
-}
-
-.navButton {
-  position: absolute;
-  right: var(--spacing-base);
-  width: var(--button-icon);
-  height: var(--button-icon);
-  display: none;
-  padding: 0;
-}
-
-.withUtil {
-  right: calc(var(--spacing-xxlarge) * 1.285);
-}
-
-.staged .navButton {
-  top: var(--spacing-medium);
-  right: var(--spacing-base);
-}
-
-aside .navButton {
-  right: var(--spacing-medium);
-}
-
-.close, .menu {
-  width: var(--button-icon);
-  height: var(--button-icon);
+nav .badge {
+  margin-right: var(--spacing-base);
 }
 
 @media only screen and (max-width: 768px) {
 
-  nav a.active {
-    border-bottom: none !important;
+  @media (prefers-color-scheme: light) {
+    nav ul {
+      box-shadow: var(--shadow-lm);
+      background-color: var(--color-light);
+    }
   }
 
-  header nav {
-    position: initial;
+  @media (prefers-color-scheme: dark) {
+    nav ul {
+      box-shadow: var(--shadow-dm);
+      background-color: var(--color-dark);
+    }
   }
 
-  header h1 {
-    float: none;
-    margin-top: 0;
-  }
-
-  header nav ul {
+  .navItems {
     display: none;
   }
 
-  nav.primaryNav ul {
-    display: inherit;
+  .mobileNav {
+    display: flex;
+    align-items: center;
   }
 
-  nav a {
-    padding: 0;
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: var(--spacing-small) 0;
+    align-items: flex-start;
   }
 
-  header nav.staged ul {
-    display: inherit;
+  nav ul li a.wrapper {
+    display: flex;
   }
 
-  .navButton, .close, .menu {
-    display: inherit !important;
+  nav ul li a {
+    padding-top: var(--spacing-base) !important;
+    padding-bottom: var(--spacing-base) !important;
+    padding-left: var(--spacing-medium) !important;
+    padding-right: var(--spacing-medium) !important;
   }
 
-  .withUtil {
-    right: calc(var(--spacing-xxlarge) * 1.43);
-  }
-
-  .utilityIcon {
-    padding-left: var(--spacing-medium);
-    margin-left: var(--spacing-base);
-  }
-
-  header.singleNav nav ul {
-    display: inherit !important;
+  nav ul li a:hover {
+    box-shadow: inset 3px 0 black;
   }
 
   nav .btn {
-    margin-left: 0 !important;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  header h1 {
-    font-size: calc(var(--font-size-logo)*.9);
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .centeredTitle {
-    text-align: center;
+    margin: var(--spacing-base) var(--spacing-medium);
+    display: inline-flex !important;
   }
 
-  .logoMark {
-    width: 2rem;
-    height: 2rem;
+  nav ul li a.wrapper {
+    display: flex;
   }
 
-  /* header .wrapper {
-    padding-top: var(--spacing-base);
-    padding-bottom: var(--spacing-base);
-  } */
-
-  .staged .navButton {
-    top: calc(var(--spacing-base) * 1.25);
+  nav .badge {
+    margin-right: 0;
+    margin-left: var(--spacing-medium);
   }
+
 }
