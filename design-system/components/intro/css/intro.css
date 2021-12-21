@@ -2,11 +2,19 @@
   .intro {
     background-color: var(--color-light);
   }
+
+  p.hint {
+    color: var(--color-label-lm);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   .intro {
     background-color: var(--color-shade-dm);
+  }
+
+  p.hint {
+    color: var(--color-label-dm);
   }
 }
 
@@ -31,7 +39,6 @@ p.hint {
   left: 50%;
   font-size: var(--font-size-xsmall) !important;
   font-weight: bold;
-  opacity: .5;
   animation: floating 3s ease infinite;
   max-width: max-content !important;
   transition: .3s;
