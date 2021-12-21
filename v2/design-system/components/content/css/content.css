@@ -1,3 +1,15 @@
+@media (prefers-color-scheme: light) {
+  .iconAlt {
+    color: var(--color-label-lm);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .iconAlt {
+    color: var(--color-label-dm);
+  }
+}
+
 .group {
   display: flex;
   margin: var(--spacing-large) 0;
@@ -40,7 +52,15 @@
 
 .description .icon {
   width: var(--size-project-icon);
+  height: var(--size-project-icon);
   margin: 0 0 var(--spacing-base) 0;
+  border-radius: var(--radius-soft);
+}
+
+.iconAlt {
+  font-weight: bold;
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
 }
 
 .center .description .icon {
@@ -57,6 +77,7 @@
 .description img.avatar {
   height: var(--size-avatar);
   width: var(--size-avatar) !important;
+  border-radius: var(--radius-round);
 }
 
 .groupRow {
@@ -89,6 +110,7 @@
 .groupRow .description {
     padding: 0 var(--spacing-base);
     justify-content: flex-start;
+    flex: 1 1 0px;
 }
 
 @media only screen and (max-width: 1024px) {

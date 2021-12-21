@@ -4,11 +4,69 @@
 /* Add your custom styles in this file... */
 
 @media (prefers-color-scheme: light) {
+  .icon.calyx {
+    background-image: url('../assets/calyxos/logo/logo-lm.png');
+  }
 
+  .icon.harvard {
+    background-image: url('../assets/harvard/logo/logo-lm.png');
+  }
+
+  .icon.onionshare {
+    background-image: url('../assets/onionshare/logo/logo-lm.png');
+  }
+
+  .icon.normalsec {
+    background-image: url('../assets/normalsec/logo/logo-lm.png');
+  }
+
+  .icon.signal {
+    background-image: url('../assets/signal/logo/logo-lm.png');
+  }
+
+  .icon.uspto {
+    background-image: url('../assets/uspto/logo/logo-lm.png');
+  }
+
+  .icon.wef {
+    background-image: url('../assets/wef/logo/logo-lm.png');
+  }
 }
 
 @media (prefers-color-scheme: dark) {
+  .icon.calyx {
+    background-image: url('../assets/calyxos/logo/logo-dm.png');
+  }
 
+  .icon.harvard {
+    background-image: url('../assets/harvard/logo/logo-dm.png');
+  }
+
+  .icon.onionshare {
+    background-image: url('../assets/onionshare/logo/logo-dm.png');
+  }
+
+  .icon.normalsec {
+    background-image: url('../assets/normalsec/logo/logo-dm.png');
+  }
+
+  .icon.signal {
+    background-image: url('../assets/signal/logo/logo-dm.png');
+  }
+
+  .icon.uspto {
+    background-image: url('../assets/uspto/logo/logo-dm.png');
+  }
+
+  .icon.wef {
+    background-image: url('../assets/wef/logo/logo-dm.png');
+  }
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 @media only screen and (max-width: 1280px) {

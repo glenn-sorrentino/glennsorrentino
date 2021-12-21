@@ -20,6 +20,12 @@
   ul li {
     color: var(--color-dark);
   }
+
+  .code {
+    color: #e83e8c;
+    background-color: var(--color-shade-lm);
+    border: var(--border-dark);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +47,12 @@
 
   ul li {
     color: var(--color-light);
+  }
+
+  .code {
+    color: #EE72AC;
+    background-color: var(--color-shade-dm);
+    border: var(--border-light);
   }
 }
 
@@ -99,6 +111,14 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
 
 .center h1, .center h2, .center h3, .center h4, .center h5, .center h6 {
   text-align: center;
+}
+
+.code {
+  padding: var(--spacing-xxsmall) var(--spacing-xsmall);
+  border-radius: var(--radius-soft);
+  font-family: monospace;
+  width: max-content !important;
+  font-size: var(--font-size-small);
 }
 
 @media only screen and (max-width: 1440px) {
