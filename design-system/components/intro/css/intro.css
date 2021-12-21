@@ -6,7 +6,7 @@
 
 @media (prefers-color-scheme: dark) {
   .intro {
-    background-color: var(--color-dark);
+    background-color: var(--color-shade-dm);
   }
 }
 
