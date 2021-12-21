@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: light) {
   .card {
     border: var(--border-dark);
+    background-color: var(--color-light);
   }
 }
 
