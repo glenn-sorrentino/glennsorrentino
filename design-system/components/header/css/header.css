@@ -24,8 +24,6 @@ header {
   right: 0;
   left: 0;
   flex: 0 1 auto;
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
 }
 
 header .wrapper {
