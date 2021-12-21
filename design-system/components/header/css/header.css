@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: light) {
   header {
-    background-color: var(--color-light);
+    background-color: var(--color-glass-lm);
   }
 
   nav ul li a:hover {
@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: var(--color-dark);
+    background-color: var(--color-glass-dm);
   }
 
   nav ul li a:hover {
@@ -24,6 +24,8 @@ header {
   right: 0;
   left: 0;
   flex: 0 1 auto;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
 }
 
 header .wrapper {
@@ -113,7 +115,6 @@ nav .badge {
 }
 
 @media only screen and (max-width: 768px) {
-
   @media (prefers-color-scheme: light) {
     nav ul {
       box-shadow: var(--shadow-lm);
@@ -176,5 +177,4 @@ nav .badge {
     margin-right: 0;
     margin-left: var(--spacing-medium);
   }
-
 }
