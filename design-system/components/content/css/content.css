@@ -114,6 +114,16 @@
     flex: 1 1 0px;
 }
 
+.mobileImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.mobileImageContainer img {
+  width: 80%;
+}
+
 @media only screen and (max-width: 1024px) {
   .description h3,
   .description h4,
@@ -138,6 +148,15 @@
   .group img {
     width: 100%;
     margin: var(--spacing-base) 0 0 0;
+  }
+
+  .mobileImageContainer {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .mobileImageContainer img {
+    width: 66%;
   }
 
   .description {
@@ -172,5 +191,11 @@
 
   .groupRow .description:last-of-type {
       padding: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mobileImageContainer img {
+    width: 100%;
   }
 }
