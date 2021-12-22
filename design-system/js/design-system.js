@@ -10,14 +10,12 @@ $(document).ready(function() {
     }
   });
 
-  // HEADER
-
   $('.btnIcon').on('click', function() {
-    $('.navItems ul').toggleClass('open');
+    $('nav ul').toggleClass('open');
   });
 
   $('NAV li').on('click', function() {
-    $('.navItems ul').removeClass('open');
+    $('nav ul').removeClass('open');
   });
 
 });
