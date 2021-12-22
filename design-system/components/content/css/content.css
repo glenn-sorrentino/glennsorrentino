@@ -26,7 +26,6 @@
   margin: 0;
   display: flex;
   align-self: center;
-  height: fit-content;
 }
 
 .description {
