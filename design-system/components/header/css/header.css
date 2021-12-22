@@ -125,9 +125,10 @@ nav .badge {
   }
 
   @media (prefers-color-scheme: dark) {
+
     nav ul {
       box-shadow: var(--shadow-dm);
-      background-color: var(--color-dark);
+      background-color: var(--color-shade-dm);
     }
 
     nav ul li a:hover {
