@@ -122,11 +122,11 @@
   display: flex;
   justify-content: center;
   width: 50%;
-  height: fit-content;
 }
 
 .mobileImageContainer img {
   width: 80%;
+  height: max-content;
 }
 
 @media only screen and (max-width: 1024px) {
