@@ -58,6 +58,7 @@
   height: var(--size-project-icon);
   margin: 0 0 var(--spacing-base) 0;
   border-radius: var(--radius-soft);
+  align-self: auto;
 }
 
 .iconAlt {
