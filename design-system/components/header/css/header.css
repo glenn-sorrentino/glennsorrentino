@@ -135,13 +135,13 @@ nav .badge {
     }
   }
 
-  .navItems {
+  .navItems ul {
     display: none;
   }
 
   .mobileNav {
     display: flex;
-    align-items: center;
+    align-self: center;
   }
 
   nav ul {
