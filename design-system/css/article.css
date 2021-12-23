@@ -7,7 +7,7 @@
 }
 
 article img {
-  height: auto;
+  height: inherit;
 }
 
 article img.small {
