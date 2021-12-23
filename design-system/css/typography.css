@@ -191,4 +191,8 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
     font-size: calc(var(--font-size-1) * .6);
     line-height: calc(var(--line-height-1) * .6);
   }
+
+  .code {
+    width: fit-content !important;
+  }
 }
