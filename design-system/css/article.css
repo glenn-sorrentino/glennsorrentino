@@ -7,7 +7,7 @@
 }
 
 article p {
-  word-break: break-all;
+  word-wrap: anywhere;
 }
 
 article img {
