@@ -8,6 +8,7 @@
 
 article p {
   word-wrap: anywhere;
+  word-break: break-word;
 }
 
 article img {
