@@ -6,6 +6,10 @@
 
 }
 
+article img {
+  height: auto;
+}
+
 article img.small {
   max-width: 640px;
 }
