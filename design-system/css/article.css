@@ -6,6 +6,10 @@
 
 }
 
+article p {
+  word-break: break-all;
+}
+
 article img {
   height: inherit;
 }
