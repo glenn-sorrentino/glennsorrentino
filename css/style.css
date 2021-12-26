@@ -3,6 +3,18 @@
 
 /* Add your custom styles in this file... */
 
+@font-face {
+  font-family: "Handwriting";
+  src: url("../design-system/fonts/handwriting/regular.woff2") format("woff2"),
+       url("../design-system/fonts/handwriting/regular.woff") format("woff");
+}
+
+.handwriting {
+  font-family: "Handwriting", cursive;
+  transform: rotate(-4deg);
+  display: inline-flex;
+}
+
 @media (prefers-color-scheme: light) {
   .icon.calyx {
     background-image: url('../assets/calyxos/logo/logo-lm.png');
@@ -73,8 +85,75 @@
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 960px) {
+  @media (prefers-color-scheme: light) {
+    nav ul {
+      box-shadow: var(--shadow-lm);
+      background-color: var(--color-light);
+    }
 
+    nav ul li a:hover {
+      box-shadow: inset 3px 0 var(--color-dark);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    nav ul {
+      box-shadow: var(--shadow-dm);
+      background-color: var(--color-shade-dm);
+    }
+
+    nav ul li a:hover {
+      box-shadow: inset 3px 0 var(--color-light);
+    }
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+    align-self: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: var(--spacing-small) 0;
+    align-items: flex-start;
+  }
+
+  nav ul li a.wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  nav ul li a {
+    padding-top: var(--spacing-base) !important;
+    padding-bottom: var(--spacing-base) !important;
+    padding-left: var(--spacing-medium) !important;
+    padding-right: var(--spacing-medium) !important;
+  }
+
+  nav .btn {
+    margin: var(--spacing-base) var(--spacing-medium);
+    display: inline-flex !important;
+  }
+
+  nav ul li a.wrapper {
+    display: flex;
+  }
+
+  nav .badge {
+    margin-right: 0;
+    margin-left: var(--spacing-medium);
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -82,6 +161,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
 
 }
 
