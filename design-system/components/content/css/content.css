@@ -87,6 +87,7 @@
 .groupRow {
   display: flex;
   flex-direction: row;
+  margin: var(--spacing-large) 0;
 }
 
 .group .description h3,
@@ -115,6 +116,10 @@
     padding: 0 var(--spacing-base);
     justify-content: flex-start;
     flex: 1 1 0px;
+}
+
+.groupRow .description img ~ .iconAlt {
+  margin-top: var(--spacing-small) !important;
 }
 
 .mobileImageContainer {
@@ -195,6 +200,10 @@
 
   .groupRow .description:last-of-type {
       padding: 0;
+  }
+
+  .groupRow .description img {
+    order: 9;
   }
 }
 
