@@ -118,6 +118,16 @@
     flex: 1 1 0px;
 }
 
+.groupRow.center .description {
+  text-align: center;
+}
+
+.groupRow.center .description img {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .groupRow .description img ~ .iconAlt {
   margin-top: var(--spacing-small) !important;
 }
@@ -180,6 +190,7 @@
 
   .groupRow {
     flex-direction: column;
+    margin: 0;
   }
 
   .groupRow .description {
@@ -204,6 +215,18 @@
 
   .groupRow .description img {
     order: 9;
+  }
+
+  .groupRow.center .description {
+    text-align: left !important;
+  }
+
+  .groupRow.center .description h1, h2, h3, h4, h5, h6 {
+    text-align: left !important;
+  }
+
+  .groupRow.center .description img {
+    width: 100%;
   }
 }
 
