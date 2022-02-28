@@ -87,8 +87,8 @@
 				ExitPolicy reject6 [FE80::]/10:* # Block link-local IPv6<br>
 				ExitPolicy reject6 [2002::]/16:* # Block 6to4 addresses<br>
 				IPv6Exit 1</p>
-			<p>Save and exit.</p>
 			<img class="small" src="../assets/articles/exit-relay/step4.png" alt="Torrc file">
+			<p>Save and exit.</p>
 			<h3>Step 5: Restart Tor</h3>
 			<p class="code">systemctl restart tor</p>
 			<img class="small" src="../assets/articles/exit-relay/step5.png" alt="Restarting Tor in the Terminal">
