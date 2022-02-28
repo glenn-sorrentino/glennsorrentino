@@ -79,8 +79,13 @@
 				CookieAuthentication 1<br>
 				ORPort 9001<br>
 				Nickname yournickname<br></p>
-			<p>Add this line to the end of the file:</p>
-			<p class="code">ExitPolicy accept *:*</p>
+			<p>Add these lines to the end of the file:</p>
+			<p class="code">ExitPolicy accept *:*<br>
+				ExitPolicy accept6 *:*<br>
+				ExitPolicy reject6 [FC00::]/7:* # Block private IPv6<br>
+				ExitPolicy reject6 [FE80::]/10:* # Block link-local IPv6<br>
+				ExitPolicy reject6 [2002::]/16:* # Block 6to4 addresses<br>
+				IPv6Exit 1</p>
 			<p>Save and exit</p>
 			<img class="small" src="../assets/articles/exit-relay/step4.png" alt="Torrc file">
 			<h3>Step 5: Restart Tor</h3>
