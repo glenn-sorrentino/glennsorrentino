@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Glenn Sorrentino">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>How to set up a private Tor exit node</title>
+	<link rel="stylesheet" href="../design-system/css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<script src="../design-system/js/jquery-min.js"></script>
+	<script src="../design-system/js/design-system.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<div class="logoMark"></div>
+				<h1><a href="#">Glenn Sorrentino</a></h1>
+			</div>
+			<nav class="navItems">
+				<ul>
+					<li><a class="wrapper" href="../#work">Recent Work</a></li>
+					<li><a class="wrapper" href="../#patents">Patents</a></li>
+					<li><a class="wrapper" href="../#articles">Artciles</a></li>
+					<li><a class="wrapper" href="../#speaking">Speaking</a></li>
+					<li><a class="wrapper" href="../#about">About</a></li>
+					<li><a role="button" class="btn primaryBtn btnLrg" href="../#contact">Let's Work Together</a></li>
+				</ul>
+			</nav>
+			<nav class="mobileNav">
+				<a><span class="btnIcon"></span></a>
+			</nav>
+		</div>
+	</header>
+
+	<section class="intro">
+		<div class="wrapper">
+			<h2>How to set up a private Tor exit node 🧅</h2>
+			<p class="meta">February 27, 2022</p>
+		</div>
+		<p class="hint">Scroll Down</p>
+	</section>
+
+	<section>
+		<article class="wrapper">
+			<p>The Tor network relies on volunteers to operate relays. The more relays, the safer Tor is. When you're using the Tor Browser, for example, when you visit a website, that website will see the IP address of the exit relay that is part of your particular connection.</p>
+			<p>Running a Tor exit node can put you at risk if you run one from your home network. It could appear that someone on your network is visiting sites that they may not be visiting. Remember when <a href="https://www.theguardian.com/commentisfree/2017/aug/17/anti-trump-site-us-government-surveillance" target="_blank" rel="noopener noreferrer">Tr*mp wanted to get the IP addresses</a> of activists that visited an anti-Tr*mp website? Maybe you visited it, may be you didn't, but it *looks* like you did. People have been <a href="https://www.eff.org/deeplinks/2017/04/access-now-and-eff-condemn-arrest-tor-node-operator-dmitry-bogatov-russia" target="_blank" rel="noopener noreferrer">arrested by hostile governments</a> for running an exit node, too.</p>
+			<p>I'll show you how to get a Tor exit node running completely anonymously so you can help keep private traffic flowing safely.</p>
+			<p>What you'll need:</p>
+			<ul>
+				<li>Tor Browser</li>
+				<li>A trusted VPN (Mullvad is a good choice)</li>
+				<li>15€ in Zcash</li>
+			  <li>An email address</li>
+			  <li>A Terminal app</li>
+			</ul>
+
+			<h3>Step 1: Get a VPS</h3>
+			<p>In Tor Browser, go to <a href="https://njal.la" target="_blank" rel="noreferrer noopener">https://njal.la</a> and buy a new virtual private server (VPS) using Zcash. Note that Njalla has an onion address available. If you need a new email account that isn't associated with your real identity, you can create on on Protonmail, who also has an onion address available.</p>
+			<img src="../assets/articles/exit-relay/step1.png" alt="Njalla Website">
+			<h3>Step 2: Log In</h3>
+			<p>Make sure your VPN is running and open your Terminal app and log in to your new server.</p>
+			<img class="small" src="../assets/articles/exit-relay/step2.png" alt="Logging in in the Terminal">
+			<h3>Step 3: Install Software</h3>
+			<p>Update the system and install the software we'll need:</p>
+			<p class="code">apt update && apt -y dist-upgrade && apt -y autoremove && apt install -y tor nyx nano</p>
+			<img  class="small"src="../assets/articles/exit-relay/step3.png" alt="Install software">
+			<h3>Step 4: Configure your relay</h3>
+			<p>Now we'll get the exit setup. Edit the torrc file:</p>
+			<p class="code">nano /etc/tor/torrc</p>
+			<p>Uncomment the following lines:</p>
+			<p class="code">RunAsDaemon 1<br>
+				ControlPort 9051<br>
+				CookieAuthentication 1<br>
+				ORPort 9001<br>
+				Nickname {redacted}<br></p>
+			<p>Add this line to the end of the file:</p>
+			<p class="code">ExitPolicy accept *:*</p>
+			<p>Save and exit</p>
+			<img class="small" src="../assets/articles/exit-relay/step4.png" alt="Torrc file">
+			<h3>Step 5: Restart Tor</h3>
+			<p class="code">systemctl restart tor</p>
+			<img class="small" src="../assets/articles/exit-relay/step5.png" alt="Restarting Tor in the Terminal">
+			<h3>Step 6. Open Nyx</h3>
+			<p>Open Nyx to see your relay's activity!</p>
+			<p class="code">nyx</p>
+			<img src="../assets/articles/exit-relay/step6.png" alt="Nyx interface">
+			<p>Give it some time and then check search atlas.torproject.org for your relay.</p>
+			<img src="../assets/articles/exit-relay/step7.png" alt="Nyx interface">
+			<p>🥳 Congratulations! You just added a trusted, private exit node to the Tor network!</p> 
+		</article>
+	</section>
+
+	<footer>
+		<div class="wrapper">
+			<p>Made with ❤️ by Glenn Sorrentino using the <a href="https://github.com/glenn-sorrentino/design-system" target="_blank" rel="noopener noreferrer">Simple Design System</a>.</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
