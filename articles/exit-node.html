@@ -49,7 +49,7 @@
 
 	<section>
 		<article class="wrapper">
-			<p>Running a Tor exit node is one of the most important things volunteers can do to strengthen the Tor network. It can also put them at risk if running it from home since it could appear that someone on their network is visiting sites that they may not be visiting. Remember when <a href="https://www.theguardian.com/commentisfree/2017/aug/17/anti-trump-site-us-government-surveillance" target="_blank" rel="noopener noreferrer">Tr*mp wanted to get the IP addresses</a> of activists that visited an anti-Tr*mp website? Maybe an exit operator visited the site, maybe they didn't, but it doesn't matter because it *looks* like they did. Before you consider running an exit relay, <a href="https://blog.torproject.org/tips-running-exit-node/" target="_blank" rel="noopener noreferrer">read these tips from the Tor Project first</a>.</p>
+			<p>Running a Tor exit node is one of the most important things volunteers can do to strengthen the Tor network. It can also put them at risk if running it from home, since it could appear that someone on their network is visiting sites that they may not be visiting. Remember when <a href="https://www.theguardian.com/commentisfree/2017/aug/17/anti-trump-site-us-government-surveillance" target="_blank" rel="noopener noreferrer">Tr*mp wanted to get the IP addresses</a> of activists that visited an anti-Tr*mp website? Maybe an exit operator visited the site, maybe they didn't, but it doesn't matter because it *looks* like they did. Before you consider running an exit relay, <a href="https://blog.torproject.org/tips-running-exit-node/" target="_blank" rel="noopener noreferrer">read these tips from the Tor Project</a>.</p>
 			<p>I'll show you how to get an exit node running without revealing any personal information about yourself.</p>
 			<p>What you'll need:</p>
 			<ul>
@@ -87,7 +87,7 @@
 				ExitPolicy reject6 [FE80::]/10:* # Block link-local IPv6<br>
 				ExitPolicy reject6 [2002::]/16:* # Block 6to4 addresses<br>
 				IPv6Exit 1</p>
-			<p>Save and exit</p>
+			<p>Save and exit.</p>
 			<img class="small" src="../assets/articles/exit-relay/step4.png" alt="Torrc file">
 			<h3>Step 5: Restart Tor</h3>
 			<p class="code">systemctl restart tor</p>
@@ -96,7 +96,7 @@
 			<p>Open Nyx to see your relay's activity!</p>
 			<p class="code">nyx</p>
 			<img src="../assets/articles/exit-relay/step6.png" alt="Nyx interface">
-			<p>Give it some time and then check search <a href="https://atlas.torproject.org" target="_blank" rel="noopener noreferrer">atlas.torproject.org</a> for your relay.</p>
+			<p>Give it some time and then check <a href="https://atlas.torproject.org" target="_blank" rel="noopener noreferrer">atlas.torproject.org</a> for your relay.</p>
 			<img src="../assets/articles/exit-relay/step7.png" alt="Nyx interface">
 			<p>🥳 Congratulations! You just added a trusted, private exit node to the Tor network!</p>
 			<p>Special thanks to <a href="https://twitter.com/nickcalyx" target="_blank" rel="noopener noreferrer">Nicholas Merrill</a> for your help with this article!</p>
