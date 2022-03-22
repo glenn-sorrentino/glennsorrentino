@@ -4,6 +4,12 @@
        url("../fonts/sans/family.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Serif";
+  src: url("../fonts/serif/regular.woff2") format("woff2"),
+       url("../fonts/serif/regular.woff") format("woff");
+}
+
 @media (prefers-color-scheme: light) {
   h1, h2, h3, h4, h5, h6, p {
     color: var(--color-dark);
@@ -62,6 +68,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+  font-family: "Serif";
 }
 
 h2 {
