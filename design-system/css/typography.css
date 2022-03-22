@@ -108,7 +108,7 @@ p {
 }
 
 p.meta {
-  margin: var(--spacing-small) 0 var(--spacing-xsmall) 0 !important;
+  margin: var(--spacing-small) 0 !important;
   font-size: var(--font-size-xsmall);
 }
 
