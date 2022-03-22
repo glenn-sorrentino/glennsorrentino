@@ -69,6 +69,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: "Serif";
+  margin: var(--spacing-small) 0;
 }
 
 h2 {
@@ -85,25 +86,25 @@ h3 {
 h4 {
   font-size:  var(--font-size-3);
   line-height: var(--line-height-3);
-  margin: var(--spacing-xxlarge) 0 var(--spacing-small) 0;
+  margin: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
 }
 
 h5 {
   font-size:  var(--font-size-4);
   line-height: var(--line-height-4);
-  margin: var(--spacing-xlarge) 0 var(--spacing-small) 0;
+  margin: var(--spacing-xlarge) 0 var(--spacing-base) 0;
 }
 
 h6 {
   font-size:  var(--font-size-5);
   line-height: var(--line-height-base);
-  margin: var(--spacing-large) 0 var(--spacing-small) 0;
+  margin: var(--spacing-large) 0 var(--spacing-base) 0;
 }
 
 p {
   max-width: 640px;
   line-height: var(--line-height-base);
-  margin: var(--spacing-base) 0;
+  margin: var(--spacing-small) 0;
 }
 
 p.meta {
