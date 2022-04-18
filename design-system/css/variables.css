@@ -43,11 +43,9 @@
   --font-size-6: 1.25rem;
   --font-spacing-small: .0125rem;
 
-  --line-height-1: 1.25;
-  --line-height-2: 3.5rem;
-  --line-height-3: 2.875rem;
-  --line-height-4: 2.325rem;
-  --line-height-base: 1.5;
+  --line-height-heading-intro: 1.2;
+  --line-height-heading: 1.3;
+  --line-height-body: 1.5;
 
   --shadow-lm: 0px 20px 40px -20px rgba(0,0,0,0.15);
   --shadow-dm: 0px 20px 40px -20px rgba(0,0,0,0.25);

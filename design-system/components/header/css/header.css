@@ -43,7 +43,7 @@ header .logo {
   align-items: center;
   height: var(--size-logo);
   padding: calc(var(--spacing-medium) * 1.125) 0;
-  line-height: var(--line-height-base);
+  line-height: var(--line-height-body);
   display: flex;
   width: fit-content;
   font-weight: bold;

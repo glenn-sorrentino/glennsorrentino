@@ -44,7 +44,7 @@
 .description h4,
 .description h5,
 .description h6 {
-  margin-top: 0;
+  margin: var(--spacing-small) 0 !important;
   width: 66%;
 }
 
@@ -64,7 +64,7 @@
   font-weight: bold;
   font-size: var(--font-size-small);
   text-transform: uppercase;
-  margin: 0 0 var(--spacing-base) 0 !important;
+  margin: 0 0 var(--spacing-small) 0 !important;
 }
 
 .center .description .icon {
