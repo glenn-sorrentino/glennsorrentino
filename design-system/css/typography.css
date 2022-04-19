@@ -32,6 +32,11 @@
     background-color: var(--color-shade-lm);
     border: var(--border-dark);
   }
+
+  .highlight {
+    background-color: var(--color-dark);
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,6 +65,11 @@
     background-color: var(--color-shade-dm);
     border: var(--border-light);
   }
+
+  .highlight {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
 }
 
 body {
@@ -68,48 +78,47 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  font-family: "Serif";
-  margin: var(--spacing-small) 0;
+  line-height: var(--line-height-heading);
 }
 
 h2 {
   font-size: var(--font-size-1);
-  line-height: var(--line-height-heading);
 }
 
 h3 {
   font-size: var(--font-size-2);
-  line-height: var(--line-height-heading);
   margin: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
 }
 
 h4 {
   font-size:  var(--font-size-3);
-  line-height: var(--line-height-heading);
-  margin: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
+  margin: var(--spacing-xxlarge) 0 var(--spacing-small) 0;
 }
 
 h5 {
   font-size:  var(--font-size-4);
-  line-height: var(--line-height-heading);
-  margin: var(--spacing-xlarge) 0 var(--spacing-base) 0;
+  margin: var(--spacing-xlarge) 0 var(--spacing-small) 0;
 }
 
 h6 {
   font-size:  var(--font-size-5);
-  line-height: var(--line-height-body);
-  margin: var(--spacing-large) 0 var(--spacing-base) 0;
+  margin: var(--spacing-large) 0 var(--spacing-small) 0;
 }
 
 p {
   max-width: 640px;
   line-height: var(--line-height-body);
-  margin: var(--spacing-small) 0;
+  margin: var(--spacing-base) 0;
 }
 
 p.meta {
-  margin: var(--spacing-small) 0 !important;
+  margin: var(--spacing-small) 0 var(--spacing-xsmall) 0 !important;
   font-size: var(--font-size-xsmall);
+}
+
+.highlight {
+  padding: var(--spacing-xsmall);
+  border-radius: var(--radius-soft);
 }
 
 h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
@@ -136,24 +145,20 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
 
   h3 {
     font-size: calc(var(--font-size-2) * .9);
-    line-height: calc(var(--line-height-heading) * .9);
     margin: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
   }
 
   h4 {
     font-size: calc(var(--font-size-3) * .9);
-    line-height: calc(var(--line-height-heading) * .9);
     margin: calc(var(--spacing-xxlarge) * .9) 0 var(--spacing-small) 0;
   }
 
   h5 {
     font-size: calc(var(--font-size-4) * .9);
-    line-height: calc(var(--line-height-heading) * .9);
   }
 
   h6 {
     font-size: calc(var(--font-size-5) * .9);
-    line-height: calc(var(--line-height-body) * .9);
   }
 
 }
@@ -196,11 +201,6 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
   h3 {
     font-size: calc(var(--font-size-2) * .7);
     margin: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
-  }
-
-  h4 {
-    font-size: calc(var(--font-size-3) * .7);
-    margin: calc(var(--spacing-xxlarge) * .7) 0 var(--spacing-medium) 0;
   }
 
   h5 {
