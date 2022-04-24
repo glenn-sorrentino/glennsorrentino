@@ -28,6 +28,16 @@
   }
 }
 
+:focus {
+  text-decoration: underline;
+  outline: solid;
+}
+
+.btn:focus {
+  text-decoration: underline;
+  outline: solid;
+}
+
 html {
   scroll-padding-top: calc(var(--spacing-xxlarge) * 1.5);
 }
