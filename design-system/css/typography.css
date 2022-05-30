@@ -10,6 +10,12 @@
        url("../fonts/serif/regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Serif Bold";
+  src: url("../fonts/serif/bold.woff2") format("woff2"),
+       url("../fonts/serif/bold.woff") format("woff");
+}
+
 @media (prefers-color-scheme: light) {
   h1, h2, h3, h4, h5, h6, p {
     color: var(--color-dark);
@@ -80,6 +86,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height: var(--line-height-heading);
   font-family: "Serif";
+}
+
+h2, h3, h4, h5, h6 {
+  letter-spacing: var(--letter-spacing-serif-heading);
 }
 
 h2 {
