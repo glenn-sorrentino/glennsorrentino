@@ -43,9 +43,17 @@
   .icon.wef {
     background-image: url('../assets/wef/logo/logo-lm.png');
   }
+
+  .icon.ddos {
+    background-image: url('../assets/ddosecrets/logo-lm.png');
+  }
 }
 
 @media (prefers-color-scheme: dark) {
+  .icon.ddos {
+    background-image: url('../assets/ddosecrets/logo-dm.png');
+  }
+
   .icon.calyx {
     background-image: url('../assets/calyxos/logo/logo-dm.png');
   }
