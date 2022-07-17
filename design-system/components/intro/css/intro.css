@@ -70,6 +70,10 @@
   margin-top: var(--spacing-base);
 }
 
+.intro.secondaryNav {
+  margin-bottom: var(--spacing-medium);
+}
+
 .secondaryIntro {
   height: 80vh;
 }
