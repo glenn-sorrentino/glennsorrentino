@@ -87,9 +87,18 @@
   margin-right: var(--spacing-small);
 }
 
-@media only screen and (max-width: 768px) {
+.btnGrp .btn:last-of-type {
+  margin-right: 0;
+}
 
+@media only screen and (max-width: 768px) {
   .btn {
     margin: var(--spacing-xsmall) 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .btnLrg {
+    padding: calc(var(--spacing-base) * .75) calc(var(--spacing-base) * .9) !important;
   }
 }
