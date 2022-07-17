@@ -10,6 +10,10 @@
   p.hint {
     color: var(--color-label-lm);
   }
+
+  .intro .icon.defcon {
+    background-image: url('../../../../assets/defcon/logo-lm.png');
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,12 +28,24 @@
   p.hint {
     color: var(--color-label-dm);
   }
+
+  .intro .icon.defcon {
+    background-image: url('../../../../assets/defcon/logo-dm.png');
+  }
 }
 
 .intro {
   height: 100vh;
   align-items: center;
   position: relative;
+}
+
+.intro .icon {
+  width: 5rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: var(--spacing-small);
 }
 
 .intro h2 {
