@@ -126,7 +126,7 @@
     }
   }
 
-  nav ul {
+  header nav ul {
     display: none;
   }
 
@@ -135,7 +135,7 @@
     align-self: center;
   }
 
-  nav ul {
+  header nav ul {
     flex-direction: column;
     position: absolute;
     top: 72px;
@@ -146,28 +146,28 @@
     align-items: flex-start;
   }
 
-  nav ul li a.wrapper {
+  header nav ul li a.wrapper {
     display: flex;
     width: 100%;
   }
 
-  nav ul li a {
+  header nav ul li a {
     padding-top: var(--spacing-base) !important;
     padding-bottom: var(--spacing-base) !important;
     padding-left: var(--spacing-medium) !important;
     padding-right: var(--spacing-medium) !important;
   }
 
-  nav .btn {
+  header nav .btn {
     margin: var(--spacing-base) var(--spacing-medium);
     display: inline-flex !important;
   }
 
-  nav ul li a.wrapper {
+  header nav ul li a.wrapper {
     display: flex;
   }
 
-  nav .badge {
+  header nav .badge {
     margin-right: 0;
     margin-left: var(--spacing-medium);
   }
