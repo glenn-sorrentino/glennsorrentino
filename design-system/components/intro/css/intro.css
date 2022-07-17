@@ -74,6 +74,10 @@
   margin-bottom: var(--spacing-medium);
 }
 
+.intro.secondaryNav + section:last-of-type {
+  margin-bottom: var(--spacing-medium);
+}
+
 .secondaryIntro {
   height: 80vh;
 }
