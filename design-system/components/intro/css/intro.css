@@ -49,7 +49,7 @@
 }
 
 .intro h2 {
-  width: 80%;
+  width: 70%;
   line-height: var(--line-height-intro-heading);
 }
 
@@ -109,6 +109,12 @@ p.hint a {
 
 .fade {
   opacity: 0 !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .intro h2 {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
