@@ -73,7 +73,7 @@ img {
   width: 100%;
 }
 
-header, section, footer {
+header, article, section, footer {
   display: flex;
   justify-content: center;
 }

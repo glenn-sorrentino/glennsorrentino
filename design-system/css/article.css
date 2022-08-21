@@ -6,29 +6,12 @@
 
 }
 
-article p {
-  word-wrap: anywhere;
-  word-break: break-word;
+article {
+  margin-bottom: var(--spacing-xxlarge);
 }
 
 article img {
-  height: inherit;
-}
-
-article img.smaller {
-  max-width: 480px;
-}
-
-article img.small {
-  max-width: 640px;
-}
-
-article img.medium {
   max-width: 768px;
-}
-
-article img.mobile {
-  max-width: 375px;
 }
 
 @media only screen and (max-width: 768px) {
