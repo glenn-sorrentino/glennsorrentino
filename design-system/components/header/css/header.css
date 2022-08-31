@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: light) {
   header {
-    background-color: var(--color-light);
+    background-color: var(--color-light-translucent) !important;
   }
 
   header input {
@@ -18,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: var(--color-shade-dm);
+    background-color: var(--color-dark-translucent) !important;
   }
 
   nav a.selected {
@@ -37,6 +37,8 @@ header {
   left: 0;
   flex: 0 1 auto;
   z-index: 9;
+  backdrop-filter: blur(var(--spacing-base));
+  -webkit-backdrop-filter: blur(var(--spacing-base));
 }
 
 header .wrapper {

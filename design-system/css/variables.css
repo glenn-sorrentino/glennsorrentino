@@ -5,6 +5,8 @@
   --color-label-dm: rgba(168,168,168,1);
   --color-light: rgba(255,255,255,1);
   --color-dark: rgba(51,51,51,1);
+  --color-light-translucent: rgba(255,255,255,.8);
+  --color-dark-translucent: rgba(61,61,61,.8);
 
   --color-glass-lm: rgba(255,255,255,.8);
   --color-glass-dm: rgba(51,51,51,.9);

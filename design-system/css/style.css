@@ -8,7 +8,6 @@
 @import url("buttons.css");
 @import url("animation.css");
 @import url("typography.css");
-@import url("firefox.css");
 @import url("../components/header/css/header.css");
 @import url("../components/intro/css/intro.css");
 @import url("../components/tabs/css/tabs.css");
@@ -16,3 +15,4 @@
 @import url("../components/content/css/cards.css");
 @import url("../components/footer/css/footer.css");
 @import url("../components/badge/css/badge.css");
+/* @import url("firefox.css"); */
