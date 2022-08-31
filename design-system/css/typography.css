@@ -153,7 +153,7 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
   font-size: var(--font-size-small);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 999px) {
   h2 {
     font-size: calc(var(--font-size-1) * .9);
   }
