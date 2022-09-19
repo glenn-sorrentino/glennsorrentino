@@ -161,10 +161,21 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
   font-size: var(--font-size-small);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1280px) {
+  h2 {
+    font-size: calc(var(--font-size-1) * .95);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
   h2 {
     font-size: calc(var(--font-size-1) * .85);
   }
+}
+
+@media only screen and (max-width: 1000px) {
+
 
   h3 {
     font-size: calc(var(--font-size-2) * .85);
@@ -184,9 +195,6 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
     font-size: calc(var(--font-size-5) * .85);
   }
 
-}
-
-@media only screen and (max-width: 1024px) {
 }
 
 @media only screen and (max-width: 768px) {
