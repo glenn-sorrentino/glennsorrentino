@@ -1,7 +1,13 @@
 @font-face {
   font-family: "Sans";
-  src: url("../fonts/sans/family.woff2") format("woff2"),
-       url("../fonts/sans/family.woff") format("woff");
+  src: url("../fonts/sans/Inter-Regular.woff2") format("woff2"),
+       url("../fonts/sans/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sans Bold";
+  src: url("../fonts/sans/Inter-Bold.woff2") format("woff2"),
+       url("../fonts/sans/Inter-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -83,8 +89,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
   line-height: var(--line-height-heading);
+  font-family: 'Sans Bold';
 }
 
 h2, h3, h4, h5, h6 {
@@ -119,6 +125,8 @@ p {
   max-width: 640px;
   line-height: var(--line-height-body);
   margin: var(--spacing-base) 0;
+  font-family: 'Sans';
+
 }
 
 p.meta {
