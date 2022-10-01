@@ -131,12 +131,25 @@ p {
 
 p.meta {
   margin: var(--spacing-small) 0 var(--spacing-xsmall) 0 !important;
-  font-size: var(--font-size-xsmall);
+  font-size: var(--font-size-small);
 }
 
 .highlight {
   padding: var(--spacing-xsmall);
   border-radius: var(--radius-soft);
+}
+
+.study p, .study ul {
+  font-size: var(--font-size-study);
+}
+
+.study img + p:not( img + p > h3) {
+  margin: var(--spacing-xlarge) 0;
+
+}
+
+.strong {
+  font-family: 'Sans Bold';
 }
 
 h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
@@ -219,6 +232,10 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
 
   h6 {
     font-size: calc(var(--font-size-5) * .75);
+  }
+
+  p.meta {
+    font-size: var(--font-size-xsmall);
   }
 
 }

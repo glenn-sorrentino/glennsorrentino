@@ -57,7 +57,7 @@ p + ul {
 }
 
 ul {
-  margin: var(--spacing-small) 0;
+  margin: var(--spacing-small) 0 var(--spacing-small) var(--spacing-base);
 }
 
 ul li {
@@ -71,6 +71,12 @@ ul li:first-of-type {
 img {
   margin: var(--spacing-base) 0;
   width: 100%;
+  max-width: 768px;
+}
+
+img.full {
+  width: 100% !important;
+  max-width: inherit !important;
 }
 
 header, article, section, footer {

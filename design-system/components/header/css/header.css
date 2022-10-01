@@ -50,6 +50,7 @@ header .wrapper {
 header h1 {
   width: fit-content;
   font-size: var(--font-size-logo) !important;
+  font-family: 'Sans' !important;
 }
 
 header .logo {
