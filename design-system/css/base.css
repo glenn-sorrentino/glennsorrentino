@@ -79,6 +79,10 @@ img.full {
   max-width: inherit !important;
 }
 
+.hidden {
+  display: none !important;
+}
+
 header, article, section, footer {
   display: flex;
   justify-content: center;
