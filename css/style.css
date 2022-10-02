@@ -89,6 +89,10 @@
   background-position: center;
 }
 
+.icon.relay {
+  background-image: url('../assets/relaylove/logo/logo.png');
+}
+
 .research .card p {
   text-align: center;
 }
