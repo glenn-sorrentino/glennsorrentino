@@ -164,7 +164,7 @@
 @media only screen and (max-width: 768px) {
   .group {
     flex-direction: column;
-    margin: var(--spacing-large) 0;
+    margin: var(--spacing-xlarge) 0;
   }
 
   .group .description {
