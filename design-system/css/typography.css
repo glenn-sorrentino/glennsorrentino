@@ -28,7 +28,7 @@
   }
 
   p.meta {
-    color: var(--color-label-lm);
+    color: var(--color-dark);
   }
 
   p.meta a {
@@ -61,7 +61,7 @@
   }
 
   p.meta {
-    color: var(--color-label-dm);
+    color: var(--color-light);
   }
 
   p.meta a {
@@ -142,13 +142,38 @@ p.meta {
   font-size: var(--font-size-study);
 }
 
-.study img + p:not( img + p > h3) {
-  margin: var(--spacing-xlarge) 0;
+.study p, .study ul {
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
 
+.study p + p {
+  margin-top: var(--spacing-small);
+}
+
+.study ul {
+  list-style: none;
+}
+
+.study img + p:not( img + p > h3) {
+  margin: var(--spacing-xlarge) auto;
+}
+
+.study h3, .study h4, .study h5, .study h6 {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: calc(var(--spacing-xxlarge) * 1.25);
+}
+
+.study p, .study img, .study ul {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .strong {
-  font-family: 'Sans Bold';
+  font-weight: bold;
 }
 
 h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
@@ -239,7 +264,10 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
 }
 
 @media only screen and (max-width: 640px) {
-
+  .study h3, .study h4, .study h5, .study h6 {
+    margin-left: 0;
+    margin-right: ;
+  }
 }
 
 @media only screen and (max-width: 480px) {
