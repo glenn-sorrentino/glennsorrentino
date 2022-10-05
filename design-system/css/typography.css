@@ -128,6 +128,10 @@ p {
 
 }
 
+li {
+  line-height: var(--line-height-body);
+}
+
 p.meta {
   margin: var(--spacing-small) 0 var(--spacing-xsmall) 0 !important;
   font-size: var(--font-size-small);
@@ -140,6 +144,8 @@ p.meta {
 
 .study p, .study ul {
   font-size: var(--font-size-study);
+  font-family: 'Serif';
+  line-height: 1.7;
 }
 
 .study p, .study ul {
@@ -165,6 +171,7 @@ p.meta {
   margin-right: auto;
   margin-bottom: 0;
   margin-top: calc(var(--spacing-xxlarge) * 1.25);
+  text-align: center;
 }
 
 .study p, .study img, .study ul {
@@ -265,8 +272,8 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
 
 @media only screen and (max-width: 640px) {
   .study h3, .study h4, .study h5, .study h6 {
-    margin-left: 0;
-    margin-right: ;
+    /* margin-left: 0;
+    margin-right: ; */
   }
 }
 

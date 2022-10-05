@@ -129,6 +129,10 @@
     margin: 0;
 }
 
+.study .groupRow .description {
+  margin: 0 var(--spacing-base);
+}
+
 .groupRow .description img ~ .iconAlt {
   margin-top: var(--spacing-small) !important;
 }
@@ -145,7 +149,19 @@
 }
 
 .study .groupRow {
-  margin: 0 !important;
+  margin: var(--spacing-xxlarge) 0;
+}
+
+.study .description h4 {
+  text-align: center;
+  margin-bottom: var(--spacing-small);
+}
+
+.study .description ul {
+  font-size: var(--font-size-base);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -172,6 +188,15 @@
     margin: var(--spacing-medium) 0;
     width: auto;
   }
+
+  .study .groupRow .description {
+    margin: var(--spacing-small) 0 !important;
+  }
+
+  .study .groupRow {
+    margin: var(--spacing-large) 0 !important;
+  }
+
 
   .group img {
     width: 100%;

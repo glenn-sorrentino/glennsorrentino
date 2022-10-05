@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Glenn Sorrentino">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Glenn is a product design leader in the San Francisco Bay Area who believes usability, accessibility, and privacy are human rights.">
+
+	<title>Slack Case Study</title>
+
+	<link rel="icon" type="image/x-icon" href="../../design-system/images/favicon/favicon.ico">
+	<link rel="stylesheet" href="../../design-system/css/style.css">
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../design-system/js/jquery-min.js"></script>
+	<script src="../../design-system/js/design-system.js"></script>
+</head>
+
+<body>
+	<div class="banner warning">
+		<p>🔐 Do not copy</p>
+	</div>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<div class="logoMark"></div>
+				<h1><a href="#">Glenn Sorrentino</a> <span class="handwriting">is a dad! ❤️</span></h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a class="wrapper" href="#work">Recent Work</a></li>
+					<li><a class="wrapper" href="#speaking">Public Interest</a></li>
+					<li><a class="wrapper" href="#about">About</a></li>
+					<li><a role="button" class="btn primaryBtn btnLrg" href="#contact">Let's work together</a></li>
+				</ul>
+				<a class="mobileNav btnIcon"></a>
+			</nav>
+		</div>
+	</header>
+
+	<div role="main">
+
+		<section class="intro">
+			<div class="wrapper">
+				<h2>Salesforce Financial Services for Slack</h2>
+				<p>Enabling collaboration, connecting systems, and automating processes.</p>
+				<p class="meta"><span class="strong">Design Time:</span> ~3 months, Feb - Apr, Aug 2021<br><span class="strong">Core Team:</span> 3 people - 1 UX, 2 PM<br><span class="strong">Role:</span> UX & research lead</p>
+			</div>
+			<p class="hint">Scroll Down</p>
+		</section>
+
+		<section id="work" class="study">
+			<div class="wrapper">
+				<h3>Overview</h3>
+				<p>Financial Services is an industry that has many stakeholders with lengthy and complex deal lifecycles. Slack for Investment Banking gives customers easy access to their Salesforce data, makes it easy to collaborate with team members, and provides industry insights that help teams stay on top of their deals.</p>
+				<img src="assets/cover.png" alt="Einstein Search dialog with a typeahead result preview.">
+				<h3>The Problem</h3>
+				<p>Investment Banking deal teams are complex and must comply with regulatory requirements that can cause timelines to slow and carry harsh penalties if done incorrectly. In addition, disparate systems act as barriers to collaboration, slowing progress further.</p>
+				<h3>Constraints</h3>
+				<p>The initial project went from 0 to 100. Our team had no dedicated researcher, so I led what we were able to accomplish. We couldn’t show any designs or prototypes or even talk about Slack to customers. These constraints forced us to abstract our questions into general behavior around collaboration. When we could start building, there were overwhelming dependencies on our Platform team, so our team had to create our components.</p>
+				<h3>Design Kickoff</h3>
+				<p>Slack was one of the most anticipated projects at Salesforce, with almost everyone on the team asking to get involved. We kicked off the effort with a cross-functional, international remote design studio using Figma to get the whole team involved. Our participants included product managers, designers, researchers, and engineers in the US and India.</p>
+				<img src="assets/figma-kickoff.png" alt="Our initial kickoff using Figma as a workspace to collaborate.">
+				<h3>Jobs to be Done</h3>
+				<p>When the team decided on our use cases, we started with what we knew about the job performers involved and their jobs to be done. We started storyboarding a flow that would showcase our products’ diversity and how Slack could influence all of them.</p>
+				<img class="full" src="assets/storyboard.png" alt="Overview of the storyboard set we created at the beginning of the preoject.">
+				<h3>Telling The Story</h3>
+				<p>About a week after the kickoff workshop, teams presented to our company executive leadership. We focused on Investment Banking and created a story about how Slack could help deal teams work better. A problem bankers face is information being spread across multiple systems, not taking advantage of automation and substantial regulatory finds from incorrect filings. We explored concepts around taking voice notes, automation embedded into workflows, compliance steps, and using Slack as a hub for all your federated data.</p>
+				<img src="assets/preso.png" alt="The first presentation set of our plan.">
+				<h3>Research</h3>
+				<p>Messaging was a new problem space for many people at the company, so we first learned as much as possible about Slack and how our customers consumed messaging apps. The acquisition closed in July, but the work kicked off in February. The timing introduced unique challenges: we weren’t allowed to talk to customers about Slack and couldn’t show any design concepts for what we were thinking. So instead, we created a set of interview questions that surrounded team collaboration and working style. Our goals were to understand how our customer’s teams collaborated today, what they liked about their current platforms, and what could be improved. Then, following every few rounds of interviews, we’d refine the designs further.</p>
+				<img src="assets/research.png" alt="Outline of our research plan.">
+				<h3>New Technology</h3>
+				<p>Before the acquisition closed, we couldn’t communicate with the Slack UX team and had to start from scratch. Slack has its Block Kit Builder, allowing users to play with the available components, or blocks, in a demo environment.</p>
+				<p>I started modeling our use cases in the builder to learn the system and used the output as my guide when creating Figma components. The JSON the builder provided was a key part of the design spec and was used as a guide for our engineering team.</p>
+				<img class="full" src="assets/blockkit.png" alt="Slack's Block Kit used to design our sample dialogues.">
+				<h3>Conversational Design</h3>
+				<p>One recent project was the Einstein Voice Assistant, a conversational way to create, read, and update your data in Salesforce. We used sample dialogs to design the conversational experience, and I brought that practice to the Slack effort.</p>
+				<img class="full" src="assets/sample-dialogue.png" alt="Overview of the various dialogues we created.">
+				<p>The information documented included the job performer, the slash command to instantiate the flow, the dialogue, the type of block kit component, where the interaction happened, and links to the Block Kit JSON from the builder. </p>
+				<img src="assets/sample-dialogue-detail.png" alt="Detail of one of the dialogues we created.">
+				<h3>Prototyping</h3>
+				<p>With the spreadsheet as our source of truth, and the Block Kit JSON showing us the expected interface, I translated the UI into Figma. Next, I built a prototype that demonstrated its interactivity. Finally, I embedded animated GIFs of the prototype into the design specifications for their respective flows.</p>
+				<img src="assets/demo.gif" alt="A demo of a multi-device interaction.">
+				<img src="assets/figma-workspace.png" alt="Overview of the final Figma workspace for the Slack project.">
+				<h3>Design Spec</h3>
+				<p>With the sample dialogue complete, the conversations modeled in the Block Kit Builder, and prototypes in place, I created a design spec that collated all of the information for our product and engineering teams. It included CX principles, information about the users we were solving for, demos, and detailed interaction specs.</p>
+				<img class="full" src="assets/design-spec.png" alt="The interaction spec with finalized information for the engineering teams.">
+				<h3>🚀 Ship It!</h3>
+				<p>When we were ready to ship the product, I worked with our product marketing team to create the assets we needed for the Slack App Directory.</p>
+				<img src="assets/app-directory.png" alt="The app directory page for our Financial Services product.">
+
+
+				<div>
+					<div>
+						<h3>In Conclusion</h3>
+						<div class="groupRow">
+							<div class="description card">
+								<h4>Successes</h4>
+								<ul>
+									<li>✅ Fast team response time</li>
+				    			<li>🤝 Lean, collaborative team</li>
+				    			<li>👍 Adapted to constraints successfully</li>
+				    			<li>🕦 Drawing from past experience</li>
+				    			<li>🙌 Called the most interesting set of use cases by Slack</li>
+								</ul>
+							</div>
+							<div class="description card">
+								<h4>Lessons</h4>
+								<ul>
+									<li>🧠 Lean research methods can work at scale</li>
+									<li>📄 Spreadsheets are a bridge to collaboration</li>
+									<li>❤️ Demos that make the audience smile are memorable</li>
+									<li>💪 Roles and responibilities enables quick response</li>
+									<li>🔥 Constraints are a good thing, actually</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
+
+	<footer>
+		<div class="wrapper">
+			<p>Made with ❤️ by Glenn Sorrentino using the <a href="https://github.com/glenn-sorrentino/design-system" target="_blank" rel="noopener noreferrer">Simple Design System</a>.</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

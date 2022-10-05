@@ -3,6 +3,10 @@
     background-color: var(--color-dark);
   }
 
+  .banner.warning {
+    background-color: var(--color-warning-lm);
+  }
+
   .banner p, .banner a {
     color: var(--color-light) !important;
   }
@@ -17,8 +21,16 @@
     background-color: var(--color-light);
   }
 
+  .banner.warning {
+    background-color: var(--color-warning-dm);
+  }
+
   .banner p, .banner a {
     color: var(--color-dark) !important;
+  }
+
+  .banner.warning p {
+    color: var(--color-light) !important;
   }
 
   .bannerBtn {
@@ -27,17 +39,21 @@
 }
 
 .banner {
-  padding: var(--spacing-xsmall) 0;
   text-align: center;
   position: fixed;
   top: 0;
+  height: 40px;
   width: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
   flex-direction: row;
   font-size: calc(var(--font-size-small) * .9);
+}
 
+.banner.warning {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .banner p {
