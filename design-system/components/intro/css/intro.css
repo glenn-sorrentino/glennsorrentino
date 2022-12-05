@@ -51,6 +51,7 @@
 .intro h2 {
   width: 70%;
   line-height: var(--line-height-intro-heading);
+  letter-spacing: .1rem;
 }
 
 .intro .tabs {
