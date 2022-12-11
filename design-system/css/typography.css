@@ -10,8 +10,6 @@
        url("../fonts/sans/AtkinsonHyperlegible-Bold.woff") format("woff");
 }
 
-Atkinson-Hyperlegible-Regular.woff
-
 /* @font-face {
   font-family: "Sans Bold";
   src: url("../fonts/sans/Inter-Bold.woff2") format("woff2"),
@@ -93,16 +91,12 @@ Atkinson-Hyperlegible-Regular.woff
 }
 
 body {
-  font-family: 'Sans', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: var(--line-height-heading);
-  font-family: 'Sans Bold';
-}
-
-h2, h3, h4, h5, h6 {
-  letter-spacing: .0425rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -111,7 +105,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-2);
-  margin: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
+  margin: var(--spacing-large) 0 var(--spacing-base) 0;
 }
 
 h4 {
@@ -158,7 +152,7 @@ p.meta {
 
 .study p, .study ul {
   margin-top: var(--spacing-large);
-  margin-bottom: var(--spacing-large);
+  margin-bottom: var(--spacing-medium);
 }
 
 .study p + p {
