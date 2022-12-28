@@ -134,7 +134,8 @@ nav ul li a {
 
 nav .btn {
   margin-left: var(--spacing-base);
-  height: auto;
+  height: fit-content;
+  align-self: center;
 }
 
 nav .badge {
@@ -185,6 +186,7 @@ nav .badge {
     position: absolute;
     top: 72px;
     right: var(--spacing-medium);
+    right: calc(var(--spacing-xxlarge) * 2.125);
     width: max-content;
     z-index: 1;
     padding: var(--spacing-small) 0;
@@ -207,6 +209,11 @@ nav .badge {
   header nav .btn {
     margin: var(--spacing-base) var(--spacing-medium);
     display: inline-flex !important;
+  }
+
+  nav .btn:last-of-type {
+    margin-right: 0;
+    margin-left: var(--spacing-base);
   }
 
   header nav ul li a.wrapper {
