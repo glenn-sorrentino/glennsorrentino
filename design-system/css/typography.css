@@ -290,6 +290,11 @@ h1 .emoji, h2 .emoji, h3 .emoji, h4 .emoji, h5 .emoji, h6 .emoji {
     margin: var(--spacing-xxlarge) 0 var(--spacing-base) 0;
   }
 
+  h4 {
+    font-size: calc(var(--font-size-3) * .7);
+    margin: var(--spacing-xxlarge) 0 var(--spacing-medium) 0;
+  }
+
   h5 {
     font-size: calc(var(--font-size-4) * .7);
   }
