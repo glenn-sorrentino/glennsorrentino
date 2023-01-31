@@ -12,7 +12,7 @@
     background-color: var(--color-shade-lm);
     background-color: #fafafa;
     opacity: 1;
-    background-image:  radial-gradient(#666 0.5px, transparent 0.5px), radial-gradient(#666 0.5px, #fafafa 0.5px);
+    background-image:  radial-gradient(#ddd 1px, transparent 1px), radial-gradient(#ddd 1px, #fafafa 1px);
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
   }
@@ -35,7 +35,7 @@
   .featureSection {
     background-color: var(--color-shade-dm);
     opacity: 1;
-    background-image:  radial-gradient(#666 0.5px, transparent 0.5px), radial-gradient(#666 0.5px, #333 0.5px);
+    background-image:  radial-gradient(#444 1px, transparent 1px), radial-gradient(#444 1px, #333 1px);
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
   }
