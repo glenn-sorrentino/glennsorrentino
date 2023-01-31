@@ -7,6 +7,19 @@
     box-shadow: var(--shadow-lm);
     border: var(--border-dark-1);
   }
+
+  .featureSection {
+    background-color: var(--color-shade-lm);
+    background-color: #fafafa;
+    opacity: 1;
+    background-image:  radial-gradient(#666 0.5px, transparent 0.5px), radial-gradient(#666 0.5px, #fafafa 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+  }
+
+  .intro + .featureSection {
+    background-color: var(--color-shade-lm);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +31,45 @@
     box-shadow: var(--shadow-dm);
     border: var(--border-light);
   }
+
+  .featureSection {
+    background-color: var(--color-shade-dm);
+    opacity: 1;
+    background-image:  radial-gradient(#666 0.5px, transparent 0.5px), radial-gradient(#666 0.5px, #333 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+  }
+}
+
+.cols {
+  display: flex;
+  flex-direction: row;
+  font-size: var(--font-size-small) !important;
+}
+
+.card .cols div {
+  width: 100%;
+  padding-right: var(--spacing-base);
+}
+
+.cols div:first-of-type {
+  padding-right: var(--spacing-xlarge);
+}
+
+.cols ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.cols ul {
+  margin-bottom: 0;
+}
+
+.featureSection .featureGroup {
+  margin-top: 0;
+}
+
+.featureSection h3 + .featureGroup {
+  margin-top: var(--spacing-large);
 }
 
 .group {
@@ -25,8 +77,21 @@
   margin: var(--spacing-xxlarge) 0;
 }
 
+article {
+  margin: calc(var(--spacing-xxlarge) * 1.5) 0;
+}
+
 .group:first-of-type {
-  margin-top: var(--spacing-medium) !important;
+  margin-top: var(--spacing-base);
+}
+
+.wrapper .group:last-of-type {
+  margin-bottom: 0;
+}
+
+.group:only-of-type {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .group .description {
@@ -40,6 +105,15 @@
   margin: 0;
   display: flex;
   align-self: center;
+}
+
+.description img {
+  max-width: 640px;
+}
+
+.group.blockContent {
+  flex-direction: row;
+  display: flex;
 }
 
 .description {
@@ -72,6 +146,7 @@
   margin: 0 0 var(--spacing-base) 0;
   border-radius: var(--radius-soft);
   align-self: auto;
+  background-size: contain;
 }
 
 .iconAlt {
@@ -89,13 +164,23 @@
   list-style: none;
   margin-left: 0;
   margin-top: var(--spacing-base);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-small) !important;
 }
 
-.description img.avatar {
+img.avatar {
   height: var(--size-avatar);
   width: var(--size-avatar) !important;
   border-radius: var(--radius-round);
+}
+
+img.avatarLg {
+  height: calc(var(--size-avatar) * 2);
+  width: calc(var(--size-avatar) * 2) !important;
+}
+
+.card .description img.avatar {
+  width: calc(var(--spacing-xxlarge) * 1.5) !important;
+  height: calc(var(--spacing-xxlarge) * 1.5) !important;
 }
 
 .groupRow {
@@ -118,6 +203,10 @@
   width: 100%;
 }
 
+.groupRow .description h4 {
+  width: 100%;
+}
+
 .groupRow .description:first-of-type {
     padding: 0 var(--spacing-base) 0 0;
 }
@@ -130,11 +219,6 @@
     padding: 0 var(--spacing-base);
     justify-content: flex-start;
     flex: 1 1 0px;
-    margin: 0;
-}
-
-.study .groupRow .description {
-  margin: 0 var(--spacing-base);
 }
 
 .groupRow .description img ~ .iconAlt {
@@ -152,20 +236,48 @@
   height: auto;
 }
 
-.study .groupRow {
-  margin: var(--spacing-xxlarge) 0;
-}
-
-.study .description h4 {
+.featureSection {
   text-align: center;
-  margin-bottom: var(--spacing-small);
 }
 
-.study .description ul {
-  font-size: var(--font-size-base);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+.featureSection h3 {
+  width: 100%;
+}
+
+.featureGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureGroup .description {
+  padding-right: 0;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+.featureSection .wrapper h3 > .group.featureGroup {
+  margin-top: 0;
+}
+
+.featureGroup .description img {
+  max-width: 768px;
+}
+
+.featureGroup img:not(.icon) {
+  width: 100% !important;
+  max-width: 768px;
+  margin-top: var(--spacing-medium) !important;
+
+}
+
+.featureGroup .description .icon {
+  align-self: center !important;
+}
+
+.team .group {
+    margin: var(--spacing-xlarge) 0;  
 }
 
 @media only screen and (max-width: 1024px) {
@@ -176,15 +288,30 @@
     width: 80%;
   }
 
-  .group {
+.group, article {
     margin: var(--spacing-xlarge) 0;
+  }
+
+  .groupRow .description h4 {
+    width: 100%;
   }
 }
 
+@media only screen and (max-width: 960px) {
+
+}
+
 @media only screen and (max-width: 768px) {
-  .group {
+.group {
     flex-direction: column;
-    margin: var(--spacing-xlarge) 0;
+  }
+
+ .group, .team .group {
+    margin: var(--spacing-large) 0;  
+}
+
+  article {
+    margin: var(--spacing-large) 0;
   }
 
   .group .description {
@@ -192,15 +319,6 @@
     margin: var(--spacing-medium) 0;
     width: auto;
   }
-
-  .study .groupRow .description {
-    margin: var(--spacing-small) 0 !important;
-  }
-
-  .study .groupRow {
-    margin: var(--spacing-large) 0 !important;
-  }
-
 
   .group img {
     width: 100%;
@@ -218,12 +336,30 @@
 
   .description {
     padding: 0;
-    margin: var(--spacing-base) 0;
   }
 
   .description.flip {
     padding: 0;
     order: initial;
+  }
+
+  .team .description {
+    order: 1 !important;
+    align-items: center;
+  }
+
+  .team h3, .team .description h4 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .team .group img.avatar {
+    margin-bottom: var(--spacing-medium) !important;
+  }
+
+  img.avatarLg {
+  height: calc(var(--size-avatar) * 1.5);
+  width: calc(var(--size-avatar) * 1.5) !important;
   }
 
   .groupRow {
@@ -233,7 +369,6 @@
 
   .groupRow .description {
     padding: 0;
-    margin: var(--spacing-base) 0;
   }
 
   .description h3,
@@ -252,14 +387,20 @@
       padding: 0;
   }
 
-  /* .groupRow .description img {
-    order: 9;
-  } */
+  .featureSection {
+    padding-top: calc(var(--spacing-xxlarge) * 1) !important;
+    padding-bottom: calc(var(--spacing-xxlarge) * 1) !important;
+  }
 }
 
 @media only screen and (max-width: 640px) {
   .mobileImageContainer img {
     width: 100%;
+  }
+
+  img.avatarLg {
+    height: var(--size-avatar);
+    width: var(--size-avatar) !important;
   }
 
 }

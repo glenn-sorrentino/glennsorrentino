@@ -16,6 +16,10 @@
 }
 
 @media (prefers-color-scheme: light) {
+  .icon.scidsg {
+    background-image: url('../assets/scidsg/logo/logo.png');
+  }
+
   .icon.calyx {
     background-image: url('../assets/calyxos/logo/logo-lm.png');
   }
@@ -50,6 +54,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .icon.scidsg {
+    background-image: url('../assets/scidsg/logo/logo.png');
+  }
+
   .icon.ddos {
     background-image: url('../assets/ddosecrets/logo-dm.png');
   }
