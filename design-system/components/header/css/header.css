@@ -60,7 +60,6 @@ header .logo {
   line-height: var(--line-height-body);
   display: flex;
   width: fit-content;
-  font-weight: bold;
 }
 
 header a {
