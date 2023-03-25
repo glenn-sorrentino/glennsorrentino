@@ -9,6 +9,10 @@
   }
 
   .featureSection {
+    background-color: var(--color-light);
+  }
+
+  .featureSection {
     background-color: var(--color-shade-lm);
     background-color: #fafafa;
     opacity: 1;
@@ -34,6 +38,9 @@
 
   .featureSection {
     background-color: var(--color-shade-dm);
+  }
+
+  .featureSection {
     opacity: 1;
     background-image:  radial-gradient(#444 1px, transparent 1px), radial-gradient(#444 1px, #333 1px);
     background-size: 20px 20px;
@@ -221,6 +228,20 @@ img.avatarLg {
     flex: 1 1 0px;
 }
 
+.centerMin {
+  align-items: center;
+}
+
+.centerMin .groupRow .description {
+  padding: 0 var(--spacing-medium);
+}
+
+.groupRow .description img:only-of-type {
+  height: 10rem;
+  width: 10rem;
+  align-self: center;
+}
+
 .groupRow .description img ~ .iconAlt {
   margin-top: var(--spacing-small) !important;
 }
@@ -358,8 +379,8 @@ img.avatarLg {
   }
 
   img.avatarLg {
-  height: calc(var(--size-avatar) * 1.5);
-  width: calc(var(--size-avatar) * 1.5) !important;
+    height: calc(var(--size-avatar) * 1.5);
+    width: calc(var(--size-avatar) * 1.5) !important;
   }
 
   .groupRow {
@@ -367,8 +388,21 @@ img.avatarLg {
     margin: 0;
   }
 
+  .centerMin .groupRow {
+    flex-direction: row;
+  }
+
+  .groupRow .description img:only-of-type {
+   height: 8rem;
+    width: 8rem;
+  }
+
   .groupRow .description {
     padding: 0;
+  }
+
+  .centerMin .groupRow .description {
+     padding: 0 var(--spacing-medium) !important;
   }
 
   .description h3,
@@ -397,6 +431,8 @@ img.avatarLg {
   .mobileImageContainer img {
     width: 100%;
   }
+
+
 
   img.avatarLg {
     height: var(--size-avatar);

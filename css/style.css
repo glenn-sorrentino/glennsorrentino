@@ -15,6 +15,10 @@
   display: inline-flex;
 }
 
+#contact .cols div:last-of-type ul li:last-of-type {
+  word-wrap: anywhere;
+}
+
 @media (prefers-color-scheme: light) {
   .icon.scidsg {
     background-image: url('../assets/scidsg/logo/logo.png');
