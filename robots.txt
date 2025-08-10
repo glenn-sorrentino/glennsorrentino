@@ -1,4 +1,0 @@
-# Block all crawlers from case-studies and design system
-User-agent: *
-Disallow: /case-studies/
-Disallow: /design-system/

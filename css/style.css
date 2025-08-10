@@ -1,133 +1,278 @@
-/* The Simple Design System is made with ❤️ by Glenn Sorrentino - https://glennsorrentino.com */
-/* Please consider contributing! */
-
-/* Add your custom styles in this file... */
+:root {
+    --bg: #fcfcfc;
+    --fg: #555;
+    --muted: #999;
+    --accent: #8310b5;
+    --highlight: #8410b518;
+    --card-bg: #fcfcfc;
+    --card-brd: rgba(0, 0, 0, .08);
+    --gradient: linear-gradient(135deg, rgba(71, 71, 71, 1) 0%, rgba(91, 91, 91, 1) 100%);
+}
 
 @font-face {
-  font-family: "Handwriting";
-  src: url("../design-system/fonts/handwriting/regular.woff2") format("woff2"),
-       url("../design-system/fonts/handwriting/regular.woff") format("woff");
+    font-family: "Atkinson Hyperlegible";
+    src:
+        url("../fonts/AtkinsonHyperlegible-Regular.woff2") format("woff2"),
+        url("../fonts/AtkinsonHyperlegible-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-.handwriting {
-  font-family: "Handwriting", cursive;
-  transform: rotate(-4deg);
-  display: inline-flex;
+@font-face {
+    font-family: "Atkinson Bold";
+    src:
+        url("../fonts/AtkinsonHyperlegible-Bold.woff2") format("woff2"),
+        url("../fonts/AtkinsonHyperlegible-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
-#contact .cols div:last-of-type ul li:last-of-type {
-  word-wrap: anywhere;
+html,
+body {
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Atkinson Hyperlegible", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    place-items: start start;
+    overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  .icon.scidsg {
-    background-image: url('../assets/scidsg/logo/logo.png');
-  }
-
-  .icon.calyx {
-    background-image: url('../assets/calyxos/logo/logo-lm.png');
-  }
-
-  .icon.harvard {
-    background-image: url('../assets/harvard/logo/logo-lm.png');
-  }
-
-  .icon.onionshare {
-    background-image: url('../assets/onionshare/logo/logo-lm.png');
-  }
-
-  .icon.normalsec {
-    background-image: url('../assets/normalsec/logo/logo-lm.png');
-  }
-
-  .icon.signal {
-    background-image: url('../assets/signal/logo/logo-lm.png');
-  }
-
-  .icon.uspto {
-    background-image: url('../assets/uspto/logo/logo-lm.png');
-  }
-
-  .icon.wef {
-    background-image: url('../assets/wef/logo/logo-lm.png');
-  }
-
-  .icon.ddos {
-    background-image: url('../assets/ddosecrets/logo-lm.png');
-  }
+body {
+    min-height: 100svh;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-items: start start;
+    overflow-x: hidden;
+    color: var(--fg);
+    background: transparent;
+    position: relative;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
 }
 
-@media (prefers-color-scheme: dark) {
-  .icon.scidsg {
-    background-image: url('../assets/hushline/dm-icon-scidsg.png');
-  }
-
-  .icon.ddos {
-    background-image: url('../assets/ddosecrets/logo-dm.png');
-  }
-
-  .icon.calyx {
-    background-image: url('../assets/calyxos/logo/logo-dm.png');
-  }
-
-  .icon.harvard {
-    background-image: url('../assets/harvard/logo/logo-dm.png');
-  }
-
-  .icon.onionshare {
-    background-image: url('../assets/onionshare/logo/logo-dm.png');
-  }
-
-  .icon.normalsec {
-    background-image: url('../assets/normalsec/logo/logo-dm.png');
-  }
-
-  .icon.signal {
-    background-image: url('../assets/signal/logo/logo-dm.png');
-  }
-
-  .icon.uspto {
-    background-image: url('../assets/uspto/logo/logo-dm.png');
-  }
-
-  .icon.wef {
-    background-image: url('../assets/wef/logo/logo-dm.png');
-  }
+a {
+    color: var(--accent);
 }
 
-.icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.wrap {
+    overflow: visible;
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: clamp(24px, 4vw, 64px);
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
 }
 
-.icon.relay {
-  background-image: url('../assets/relaylove/logo/logo.png');
+img.smooth-appear {
+    opacity: 0;
+    transform: translateY(0);
+    animation: smoothMoveFade 1s ease-out forwards;
 }
 
-.research .card p {
-  text-align: center;
+img.logo {
+    width: 200px;
+    margin-bottom: 2em;
+    box-shadow: 0 12px 24px -4px rgba(0, 0, 0, .1);
+    border-radius: 50vw;
+    outline: 1px solid rgba(0, 0, 0, .1);
 }
 
-.card {
-  margin-left: 0;
-  margin-right: 0;
+@keyframes smoothMoveFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-.5em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(.5em);
+    }
 }
 
-
-@media only screen and (max-width: 960px) {
-
+#text {
+    display: block;
+    max-width: 100%;
+    overflow: visible;
+    contain: none;
 }
 
-@media only screen and (max-width: 768px) {
-
-
+.line {
+    display: block;
+    margin: 0 0 1rem 0;
+    font-size: clamp(1.25rem, 2.2vw + 0.5rem, 1.75rem);
+    font-weight: 450;
+    letter-spacing: 0.01em;
+    animation: none;
+    background: none filter: none;
+    max-width: 768px;
 }
 
-@media only screen and (max-width: 640px) {
-
+.cursor {
+    display: inline-block;
+    width: 0.6ch;
+    border-right: 2px solid var(--muted);
+    animation: blink 1s steps(1) infinite;
+    translate: 0 0.07em;
 }
 
-@media only screen and (max-width: 480px) {
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 
+.highlight {
+    position: relative;
+    color: var(--accent);
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--highlight);
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 1px;
+    background: color-mix(in srgb, var(--accent) 65%, transparent);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .18s ease;
+    pointer-events: none;
+}
+
+.highlight:hover::after,
+.highlight:focus-visible::after {
+    transform: scaleX(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .highlight:hover .highlight-card,
+    .highlight:focus-visible .highlight-card {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.highlight-card {
+    position: absolute;
+    left: 0;
+    bottom: 120%;
+    min-width: 360px;
+    max-width: min(420px, 92vw);
+    background: var(--card-bg);
+    color: var(--fg);
+    outline: 1px solid var(--card-brd);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity .18s ease, transform .18s ease, visibility .18s;
+    z-index: 1000;
+    font-size: .95rem;
+    line-height: 1.45;
+}
+
+.highlight-card.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.highlight:hover .highlight-card,
+.highlight:focus-visible .highlight-card {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.card-media {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 0 0.5rem 0;
+}
+
+.card-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 0.75rem 0 0.125rem 0;
+    font-size: 1.125rem;
+}
+
+.card-text {
+    margin: 0 0 .25rem 0;
+    color: var(--muted);
+    font-size: .9125rem;
+    line-height: 1.3;
+}
+
+@media (max-width:640px) {
+    img.logo {
+        width: 64px;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (max-width: 640px) {
+    .highlight {
+        position: static;
+    }
+
+    .highlight-card {
+        position: fixed;
+        top: 1.5em;
+        right: 5%;
+        left: 5%;
+        bottom: auto;
+        max-width: calc(100vw - 24px);
+        width: auto;
+        max-height: calc(100vh - 24px);
+        min-width: 320px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    body.card-open::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .15);
+        pointer-events: none;
+        z-index: 999;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor {
+        animation: none;
+        border-color: transparent;
+    }
+
+    .highlight-card,
+    .highlight::after {
+        transition: none;
+    }
 }
