@@ -228,7 +228,7 @@ img.logo {
 
 @media (max-width:640px) {
     img.logo {
-        width: 64px;
+        width: 120px;
         margin-bottom: 1.5em;
     }
 }
