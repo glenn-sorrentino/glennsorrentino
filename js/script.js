@@ -86,13 +86,37 @@ const lines = [
                 alt: "Einstein Voice interface screenshots."
             }
         },
-        { type: 'text', text: ". It was the first ever turn-taking voice assistant that enabled enterprise users to perform essential tasks without ever doing manual data entry." },
+        { type: 'text', text: ". It was the first-ever turn-taking voice assistant that enabled enterprise users to perform essential tasks without ever doing manual data entry." },
         { type: 'text', text: "Working with the Salesforce AI Research team, we trained proprietary models to understand how outbound salespeople speak, allowing them to interact with Salesforce without learning new syntax using an app or custom hardware." },
-        { type: 'text', text: "In 2019, our work took center stage at Dreamforce, where we showcased the early possibilities of applied AI for the workplace." }
+        { type: 'text', text: "In 2019, " },
+        {
+            type: 'hl',
+            text: "our work took center stage at Dreamforce",
+            card: {
+                title: "Einstein Search and Voice highlighted in the main Keynote",
+                text: "Dreamforce is Salesforce's annual conference.",
+                img: "./img/dreamforce.png",
+                alt: "Dreamforce keynote 2019 highlighting two projects I led."
+            }
+        },
+        { type: 'text', text: ", where we showcased the early possibilities of applied AI for the workplace, highlighting two products that I led in our main Keynote." }
+
     ],
     [
-        { type: 'text', text: "Wayyy back in 2012 I arrived in San Francisco after agency and freelance work, and joined a startup called Zinio as a mobile designer." },
-        { type: 'text', text: "And approximately one million years ago I was an active duty Marine." },
+        { type: 'text', text: "Wayyy back in 2012 I arrived in San Francisco after agency and freelance work, and joined a startup called " },
+        {
+            type: 'hl',
+            text: "Zinio",
+            card: {
+                title: "Zinio",
+                url: "https://www.zinio.com/",
+                text: "Zinio is a digital magazine subscription service.",
+                img: "./img/zinio.png",
+                alt: "Zinio interface screenshots."
+            }
+        },
+        { type: 'text', text: " as a mobile designer, working on phones and tablets for iOS, Android, Windows, Blackberry RIM, and unreleased experimental devices." },
+        { type: 'text', text: "And approximately one million years ago, I was an active-duty US Marine." },
         { type: 'text', text: "My job was working with battalion and company commanders to get Marines to mission-critical locations and back." },
     ],
     [
