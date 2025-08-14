@@ -3,7 +3,7 @@ const lines = [
         { type: 'text', text: "👋 Hi, I'm Glenn, a product designer, non-profit leader, Board member, and digital activist working for a more equitable internet." },
     ],
     [
-        { type: 'text', text: "In 2022, I left a Big Tech job to found a " },
+        { type: 'text', text: "In 2023, I left a Big Tech job to found a " },
         {
             type: 'hl',
             text: "501(c)(3) non-profit",
@@ -29,7 +29,7 @@ const lines = [
         { type: 'text', text: " We build open-source software focused on free speech online and free access to information." },
     ],
     [
-        { type: 'text', text: "In 2023, I successfully raised funds to launch the first non-profit software-as-a-service whistleblower platform called " },
+        { type: 'text', text: "Later that year, I successfully raised funds to launch the first non-profit software-as-a-service whistleblower platform called " },
         {
             type: 'hl',
             text: "Hush Line",
